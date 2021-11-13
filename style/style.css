@@ -1,0 +1,33 @@
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #f2f2f2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  display: flex;
+  color: black;
+  justify-content: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #f2f2f2;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; 
+}
+
+footer {
+background color: black;
+}

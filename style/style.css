@@ -1,4 +1,12 @@
+/*COULEURS */
+
+/*primaire #9356DC*/
+/*Secondaire #FF79DA*/
+/*Tertiaire* #99E2D0*/ 
+
 body {margin:0;}
+
+ 
 
 .navbar {
   overflow: hidden;
@@ -22,12 +30,12 @@ body {margin:0;}
   color: black;
 }
 
-.main {
+main {
   padding: 16px;
   margin-top: 30px;
   height: 1500px; 
 }
 
 footer {
-background color: black;
+background-color: black;
 }

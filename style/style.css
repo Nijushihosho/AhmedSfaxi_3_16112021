@@ -4,9 +4,18 @@
 /*Secondaire #FF79DA*/
 /*Tertiaire* #99E2D0*/ 
 
-body {margin:0;}
+body {
+margin:0;
+font-family: 'Roboto', sans-serif;
+}
 
- 
+.logo {
+font-family: 'Shrikhand', cursive;
+}
+
+.titres {
+  font-family: 'Shrikhand', cursive;
+}
 
 .navbar {
   overflow: hidden;

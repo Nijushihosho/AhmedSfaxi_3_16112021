@@ -4,17 +4,24 @@
 /*Secondaire #FF79DA*/
 /*Tertiaire* #99E2D0*/ 
 
+*,
+  {
+box-sizing: border-box;
+}
+
+header {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  box-shadow: 0px 3px 3px lightgray;
+  padding: 50px;
+}
+
 body {
-margin: 0;
-font-family: 'Roboto', sans-serif;
+margin: 0px;
+font-family: "Roboto", sans-serif;
 }
-
-.logo {
-font-family: 'Shrikhand', cursive;
-}
-
 .titres {
-  font-family: 'Shrikhand', cursive;
+  font-family: "Shrikhand", cursive;
 }
 
 .navbar {

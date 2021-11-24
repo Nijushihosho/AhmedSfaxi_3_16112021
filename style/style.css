@@ -23,7 +23,7 @@ font-family: "Roboto", sans-serif;
 
 main {
   display: flex;
-  /*flex-flow: column wrap;*/
+  flex-flow: column wrap;
   align-items: center;
   justify-content: center;
   gap: 16px;
@@ -41,7 +41,7 @@ background-color: #f2f2f2;
 
 .belleville button {
 border-radius: 35px;
-box-shadow: 2px 1px 14px -3px lightslategray;
+box-shadow: 5px 5px 10px -3px lightslategray;
 border: none;
 color: white;
 font-weight: bold;
@@ -51,14 +51,39 @@ padding: 15px;
 }
 
 .fonctionnement {
-
+  display: flex;
+  flex-flow: column wrap;
+  flex-basis: 95%;
 }
 
-/*.titres {
-  font-family: "Shrikhand", cursive;
+.fonctionnement .box {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: flex-start;
+  background-color: #f2f2f2;
+  border-radius: 35px;
+  flex-basis: 33%;
+  font-size: 50px;
+  margin: 15px;
+  padding: 15px;
+  height: auto;
 }
 
-.navbar {
+.resto {
+  display: flex;
+  flex-flow: column wrap;
+  flex-basis: 95%;
+}
+
+.resto img {
+width: 100%;
+height: 250px;
+object-fit: cover;
+border-radius: 20px;
+}
+
+/*.navbar {
   overflow: hidden;
   background-color: #f2f2f2;
   position: fixed;
@@ -85,17 +110,23 @@ main {
   flex-flow: row wrap;
   padding: 1px;
   margin-top: 30px;
-  height: 1500px; 
+  height: auto; 
   flex-basis: 100%;
 }
 
 
-.box {
+.fonctionnement .box {
  border: 2px solid grey;
  border-radius: 15px; 
 }
 
 footer {
+display: flex;
+flex-flow: column wrap;
 background-color: black;
 color: white;
+}
+
+footer img {
+  color: white;
 }

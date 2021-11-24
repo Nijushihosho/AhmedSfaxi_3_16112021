@@ -20,7 +20,41 @@ body {
 margin: 0px;
 font-family: "Roboto", sans-serif;
 }
-.titres {
+
+main {
+  display: flex;
+  /*flex-flow: column wrap;*/
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+  padding: 8px;
+}
+
+.belleville {
+  flex-basis: 100%;
+}
+
+.banderole {
+background-color: #f2f2f2;
+}
+
+.belleville button {
+border-radius: 35px;
+box-shadow: 2px 1px 14px -3px lightslategray;
+border: none;
+color: white;
+font-weight: bold;
+font-size: 35px;
+background-image: linear-gradient(to top,#9356DC,#FF79DA);
+padding: 15px;
+}
+
+.fonctionnement {
+
+}
+
+/*.titres {
   font-family: "Shrikhand", cursive;
 }
 
@@ -44,16 +78,17 @@ font-family: "Roboto", sans-serif;
 .navbar a:hover {
   background: #f2f2f2;
   color: black;
-}
+}*/
 
 main {
   display: flex;
-  flex-flow: column wrap;
-  padding: 16px;
+  flex-flow: row wrap;
+  padding: 1px;
   margin-top: 30px;
   height: 1500px; 
   flex-basis: 100%;
 }
+
 
 .box {
  border: 2px solid grey;

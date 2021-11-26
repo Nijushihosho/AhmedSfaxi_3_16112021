@@ -125,10 +125,14 @@ main {
 }
 
 footer {
+<<<<<<< Updated upstream
 display: flex;
 flex-flow: column wrap;
 background-color: black;
 color: white;
+=======
+background-color: black;
+>>>>>>> Stashed changes
 }
 
 footer img {

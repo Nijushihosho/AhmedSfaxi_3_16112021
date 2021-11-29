@@ -9,11 +9,11 @@
 box-sizing: border-box;
 }
 
-header {
+.navbar {
   font-family: "Shrikhand", cursive;
   text-align: center;
   box-shadow: 0px 3px 3px lightgray;
-  padding: 50px;
+  padding: 5px;
 }
 
 body {
@@ -28,7 +28,7 @@ main {
   justify-content: center;
   gap: 16px;
   text-align: center;
-  padding: 8px;
+  padding: 18px;
 }
 
 .belleville {
@@ -41,6 +41,7 @@ main {
   align-items: center;
   justify-content: center;
 background-color: #f2f2f2;
+gap: 5px;
 }
 
 .belleville button {
@@ -81,7 +82,7 @@ padding: 15px;
 }
 
 .resto img {
-width: 50%;
+width: 40%;
 height: 250px;
 object-fit: cover;
 border-radius: 20px;
@@ -91,9 +92,9 @@ border-radius: 20px;
   background-image: linear-gradient(to top,#9356DC,#FF79DA);
 }
 
-/*.navbar {
+.navbar {
   overflow: hidden;
-  background-color: #f2f2f2;
+  background-color: white;
   position: fixed;
   top: 0;
   width: 100%;
@@ -109,9 +110,9 @@ border-radius: 20px;
 }
 
 .navbar a:hover {
-  background: #f2f2f2;
+  background: white;
   color: black;
-}*/
+}
 
 main {
   display: flex;

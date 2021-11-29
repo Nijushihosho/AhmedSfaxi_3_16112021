@@ -29,6 +29,7 @@ main {
   gap: 16px;
   text-align: center;
   padding: 18px;
+  height: auto;
 }
 
 .belleville {
@@ -59,6 +60,7 @@ padding: 15px;
   display: flex;
   flex-flow: column wrap;
   flex-basis: 95%;
+  font-size: 30px;
 }
 
 .fonctionnement .box {
@@ -69,7 +71,7 @@ padding: 15px;
   background-color: #f2f2f2;
   border-radius: 35px;
   flex-basis: 33%;
-  font-size: 50px;
+  font-size: 30px;
   margin: 15px;
   padding: 15px;
   height: auto;
@@ -96,7 +98,7 @@ border-radius: 20px;
   overflow: hidden;
   background-color: white;
   position: fixed;
-  top: 0;
+  top: 0px;
   width: 100%;
 }
 
@@ -104,9 +106,10 @@ border-radius: 20px;
   display: flex;
   color: black;
   justify-content: center;
+  align-items: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .navbar a:hover {

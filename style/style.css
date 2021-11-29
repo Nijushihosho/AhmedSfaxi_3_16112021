@@ -16,6 +16,29 @@ box-sizing: border-box;
   padding: 5px;
 }
 
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.navbar a {
+  display: flex;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.navbar a:hover {
+  background: white;
+  color: black;
+}
+
 body {
 margin: 0px;
 font-family: "Roboto", sans-serif;
@@ -51,9 +74,12 @@ box-shadow: 5px 5px 10px -3px lightslategray;
 border: none;
 color: white;
 font-weight: bold;
-font-size: 35px;
+font-size: 15px;
 background-image: linear-gradient(to top,#9356DC,#FF79DA);
-padding: 15px;
+transition: all 0.5s;
+cursor: pointer;
+padding: 10px 15px;
+margin: 5px;
 }
 
 .fonctionnement {
@@ -83,6 +109,13 @@ padding: 15px;
   flex-basis: 95%;
 }
 
+
+.resto .box2 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+
 .resto img {
 width: 40%;
 height: 250px;
@@ -90,32 +123,55 @@ object-fit: cover;
 border-radius: 20px;
 }
 
-.fa-heart {
+.responsive {
+  width: 50%;
+  max-width: 400px;
+  height: auto;
+}
+
+i .fa-heart {
   background-image: linear-gradient(to top,#9356DC,#FF79DA);
 }
 
-.navbar {
-  overflow: hidden;
-  background-color: white;
-  position: fixed;
-  top: 0px;
-  width: 100%;
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5;
 }
 
-.navbar a {
-  display: flex;
-  color: black;
-  justify-content: center;
-  align-items: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 15px;
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  transition: 0.5;
 }
 
-.navbar a:hover {
-  background: white;
-  color: black;
+.button :hover span:after {
+  opacity: 1;
+  right: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 main {
   display: flex;

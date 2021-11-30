@@ -1,4 +1,14 @@
 {
-    "svn.ignoreMissingSvnWarning": true,
-    "liveServer.settings.port": 5650
+	"svn.ignoreMissingSvnWarning": true,
+	"liveServer.settings.port": 5650,
+	"cSpell.enableFiletypes": [
+		"coffeescript",
+		"gitignore",
+		"jsx-tags",
+		"powershell",
+		"r",
+		"sass",
+		"sass.hover",
+		"shellscript"
+	]
 }

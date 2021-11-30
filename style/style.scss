@@ -2,7 +2,7 @@ $colors: (
 $primary: #9356DC,
 $secondary: #FF79DA,
 $tertiary: #99E2D0, 
-);
+)
 
 %shadow {
   box-shadow: 0px 3px 3px lightgray;
@@ -95,7 +95,7 @@ body {
       align-items: center;
       justify-content: center;
       gap: 16px;
-      text-align: center;
+      /*text-align: center;*/
       height: auto;
       }
       
@@ -115,26 +115,31 @@ body {
     background-color:gray;  
     flex-basis: 100%;
     height: auto;
-    font-weight: 900;
     }
         
-      button .button {
-      @extend %background;
-      @extend %shadow2;
-      border-radius: 35px;
-      border: none;
-      color: white;
-      font-weight: bold;
-      font-size: 50px;
-      padding: 10px 15px;
-      margin: 5px;
+    button .button {
+    @extend %background;
+    @extend %shadow2;
+    border-radius: 35px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    padding: 10px 15px;
+    margin: 5px;
       }
       
-      .fonctionnement {
+    .fonctionnement {
       display: flex;
+      align-content: center;
       flex-flow: column wrap;
       flex-basis: 95%;
-      font-size: 30px;
+      }
+
+      h2 {
+        display: flex;
+        justify-content: left;
+        text-align: left;
       }
       
       .container.box {
@@ -160,21 +165,22 @@ body {
                 display: flex;
                 width: 95%;
                 max-width: 250px;
+                height: auto;
                 justify-content: space-between;
                     .resto img {
                       width: 95%;
                       height: auto;
-                      max-width: 250px;
+                      /*max-width: 250px;*/
                       object-fit: cover;
                       border-radius: 20px;
-                          /*.responsive {
+                          .responsive {
                                 width: 95%;
                                 max-width: 200px;
-                                height: auto;*/
+                                height: auto;
                                 }
                     }  
-                  }
-                }
+            }
+      }
 /*main {
 display: flex;
 flex-flow: row wrap;

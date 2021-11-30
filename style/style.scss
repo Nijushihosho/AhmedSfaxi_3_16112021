@@ -1,8 +1,25 @@
-$couleurs: ( 
-violet: #9356DC,
-rose: #FF79DA,
-vert: #99E2D0, 
+$colors: ( 
+$primary: #9356DC,
+$secondary: #FF79DA,
+$tertiary: #99E2D0, 
 );
+
+%shadow {
+  box-shadow: 0px 3px 3px lightgray;
+}
+
+%shadow2 {
+  box-shadow: 5px 5px 10px -3px lightslategray;
+}
+
+
+%background {
+      background-image: linear-gradient(to top,$primary, $secondary);
+    }
+
+%fondgris {
+  background-color: #f2f2f2;
+}
 
 /*
 Error: Inconsistent indentation: 1 space was used for indentation, but the rest of the document was indented using 2 spaces.
@@ -43,34 +60,30 @@ body {
   content: "Error: Inconsistent indentation: 1 space was used for indentation, but the rest of the document was indented using 2 spaces.\A         on line 94 of ./style/style.css\A \A 89:   flex-basis: 100%;\A 90: }\A 91: \A 92: \A 93: .box {\A 94:  border: 2px solid grey;\A 95:  border-radius: 15px; \A 96: }\A 97: \A 98: footer {\A 99: background-color: black;"; }
 
   .navbar {
+    @extend %shadow;
     font-family: "Shrikhand", cursive;
     text-align: center;
-    box-shadow: 0px 3px 3px lightgray;
     padding: 5px;
-    }
-    
-    .navbar {
     overflow: hidden;
     background-color: white;
     position: fixed;
     top: 0px;
     width: 100%;
-    }
-    
-    .navbar a {
-    display: flex;
-    color: black;
-    justify-content: center;
-    align-items: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 15px;
-    }
-    
-    .navbar a:hover {
-    background: white;
-    color: black;
-    }
+      .navbar a {
+        display: flex;
+        color: black;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 15px;
+          .navbar a:hover {
+              background: white;
+              color: black;
+           }
+          }
+        }
+
     body {
       margin: 0px;
       font-family: "Roboto", sans-serif;
@@ -83,31 +96,36 @@ body {
       justify-content: center;
       gap: 16px;
       text-align: center;
-      padding: 18px;
       height: auto;
       }
       
-      .belleville {
+      .banderole {
+      @extend %fondgris;
+      display: flex;
+      /*flex-flow: column wrap;*/
+      align-items: center;
+      justify-content: center;
+      gap: 0px 5px 0px 0px;
+      height: auto;
       flex-basis: 100%;
       }
       
-      .banderole {
-      display: flex;
-      flex-flow: row nowrap;
-      align-items: center;
-      justify-content: center;
-      background-color: #f2f2f2;
-      gap: 5px;
-      }
-      
-      .belleville button {
+
+    .belleville {
+    background-color:gray;  
+    flex-basis: 100%;
+    height: auto;
+    font-weight: 900;
+    }
+        
+      button .button {
+      @extend %background;
+      @extend %shadow2;
       border-radius: 35px;
-      box-shadow: 5px 5px 10px -3px lightslategray;
       border: none;
       color: white;
       font-weight: bold;
-      font-size: 15px;
-      background-image: linear-gradient(to top,#9356DC,#FF79DA);
+      font-size: 50px;
       padding: 10px 15px;
       margin: 5px;
       }
@@ -119,91 +137,60 @@ body {
       font-size: 30px;
       }
       
-      .fonctionnement .box {
+      .container.box {
+      @extend %fondgris;
       display: flex;
       justify-content: center;
-      align-content: space-around;
-      background-color: #f2f2f2;
-      border-radius: 35px;
+      align-content: space-between;
       flex-basis: 95%;
       font-size: 30px;
       margin: 15px;
-      padding: 15px;
+      /*padding: 15px;*/
       height: auto;
+      border: 2px solid grey;
+      border-radius: 15px;
       }
-      
-      .resto {
+             
+    .resto {
       display: flex;
       flex-flow: column wrap;
       flex-basis: 95%;
-      }
+      justify-content: space-between;
+            .resto .box2 {
+                display: flex;
+                width: 95%;
+                max-width: 250px;
+                justify-content: space-between;
+                    .resto img {
+                      width: 95%;
+                      height: auto;
+                      max-width: 250px;
+                      object-fit: cover;
+                      border-radius: 20px;
+                          /*.responsive {
+                                width: 95%;
+                                max-width: 200px;
+                                height: auto;*/
+                                }
+                    }  
+                  }
+                }
+/*main {
+display: flex;
+flex-flow: row wrap;
+padding: 1px;
+margin-top: 30px;
+height: auto; 
+flex-basis: 100%;
+}*/
       
+footer {
+display: flex;
+flex-flow: column wrap;
+background-color: black;
+color: white;
+}
       
-      .resto .box2 {
-      display: flex;
-      width: 100%;
-      }
-      
-      .resto img {
-      width: 95%;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 20px;
-      }
-      
-      .responsive {
-      width: 100%;
-      max-width: 400px;
-      height: auto;
-      }
-      
-      i .fas .fa-heart {
-      background-image: linear-gradient(to top,#9356DC,#FF79DA);
-      transition-duration: .25s;
-      }
-      
-      /*.belleville button {
-        cursor: pointer;
-        display: inline-block;
-        position: relative;
-        transition: 0.5;
-      }
-      
-      .belleville button {
-        position: absolute;
-        opacity: 0;
-        top: 0;
-        transition: 0.5;
-      }
-      
-      .belleville button:hover {
-        transition-duration: 2s;
-        opacity: 0.8;
-      }*/
-      
-      
-      main {
-        display: flex;
-        flex-flow: row wrap;
-        padding: 1px;
-        margin-top: 30px;
-        height: auto; 
-        flex-basis: 100%;
-      }
-      
-      
-      .fonctionnement .box {
-       border: 2px solid grey;
-       border-radius: 15px; 
-      }
-      
-      footer {
-      display: flex;
-      flex-flow: column wrap;
-      background-color: black;
-      color: white;
-      }
-      
-      footer img {
-        color: white;
-      }
+footer img {
+color: white;
+}

@@ -43,9 +43,6 @@ body {
   -webkit-box-shadow: 0px 3px 3px lightgray;
           box-shadow: 0px 3px 3px lightgray;
   padding: 5px;
-}
-
-.navbar {
   overflow: hidden;
   background-color: white;
   position: fixed;
@@ -53,7 +50,7 @@ body {
   width: 100%;
 }
 
-.navbar a {
+.navbar .navbar a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,7 +66,7 @@ body {
   font-size: 15px;
 }
 
-.navbar a:hover {
+.navbar .navbar a .navbar a:hover {
   background: white;
   color: black;
 }
@@ -99,11 +96,6 @@ main {
   height: auto;
 }
 
-.belleville {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-}
-
 .banderole {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -120,6 +112,14 @@ main {
           justify-content: center;
   background-color: #f2f2f2;
   gap: 5px;
+  height: auto;
+}
+
+.belleville {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: auto;
+  font-weight: 900;
 }
 
 .belleville button {
@@ -159,13 +159,14 @@ main {
   -ms-flex-line-pack: distribute;
       align-content: space-around;
   background-color: #f2f2f2;
-  border-radius: 35px;
   -ms-flex-preferred-size: 95%;
       flex-basis: 95%;
   font-size: 30px;
   margin: 15px;
   padding: 15px;
   height: auto;
+  border: 2px solid grey;
+  border-radius: 15px;
 }
 
 .resto {
@@ -180,24 +181,26 @@ main {
       flex-basis: 95%;
 }
 
-.resto .box2 {
+.resto .resto .box2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 95%;
+  max-width: 250px;
 }
 
-.resto img {
+.resto .resto .box2 .resto img {
   width: 95%;
-  height: 250px;
+  height: auto;
+  max-width: 250px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px;
 }
 
-.responsive {
-  width: 100%;
-  max-width: 400px;
+.resto .resto .box2 .resto img .responsive {
+  width: 95%;
+  max-width: 200px;
   height: auto;
 }
 
@@ -239,11 +242,6 @@ main {
   height: auto;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-}
-
-.fonctionnement .box {
-  border: 2px solid grey;
-  border-radius: 15px;
 }
 
 footer {

@@ -138,15 +138,15 @@ body {
 
       h2 {
         display: flex;
-        justify-content: left;
         text-align: left;
       }
       
-      .container.box {
+    .box {
       @extend %fondgris;
       display: flex;
+      flex-flow: row wrap;
       justify-content: center;
-      align-content: space-between;
+      align-content: center;
       flex-basis: 95%;
       font-size: 30px;
       margin: 15px;
@@ -154,33 +154,49 @@ body {
       height: auto;
       border: 2px solid grey;
       border-radius: 15px;
-      }
-             
-    .resto {
+    }
+
+    ol {
       display: flex;
-      flex-flow: column wrap;
-      flex-basis: 95%;
-      justify-content: space-between;
-            .resto .box2 {
-                display: flex;
-                width: 95%;
-                max-width: 250px;
-                height: auto;
-                justify-content: space-between;
-                    .resto img {
-                      width: 95%;
-                      height: auto;
-                      /*max-width: 250px;*/
-                      object-fit: cover;
-                      border-radius: 20px;
-                          .responsive {
-                                width: 95%;
-                                max-width: 200px;
-                                height: auto;
-                                }
-                    }  
-            }
-      }
+      flex-flow: row wrap;
+        ol>li {
+            text-decoration-style: solid;
+            border-radius: 50%;
+            background-color: $primary;
+            color: white;
+        }
+    }
+    
+.resto {
+display: flex;
+flex-flow: column wrap;
+flex-basis: 100%;
+justify-content: space-between;
+}
+
+.resto .box2 {
+display: flex;
+width: 100%;
+max-width: 250px;
+justify-content: space-between;
+}
+
+.resto img {
+display: flex; 
+width: 100%;
+height: auto;
+max-width: 250px;
+object-fit: cover;
+border-radius: 20px;
+}
+ 
+.responsive {
+display: flex;
+width: 100%;
+max-width: 400px;
+height: auto;
+}
+
 /*main {
 display: flex;
 flex-flow: row wrap;

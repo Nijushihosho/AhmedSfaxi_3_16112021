@@ -1,176 +1,264 @@
-/*COULEURS */
+/*
+Error: Inconsistent indentation: 1 space was used for indentation, but the rest of the document was indented using 2 spaces.
+        on line 94 of ./style/style.css
 
-/*primaire #9356DC*/
-/*Secondaire #FF79DA*/
-/*Tertiaire* #99E2D0*/ 
+89:   flex-basis: 100%;
+90: }
+91: 
+92: 
+93: .box {
+94:  border: 2px solid grey;
+95:  border-radius: 15px; 
+96: }
+97: 
+98: footer {
+99: background-color: black;
 
-* {
-box-sizing: border-box;
+Backtrace:
+./style/style.css:94
+/usr/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/engine.rb:494:in `block in tabulate'
+/usr/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/engine.rb:452:in `each'
+/usr/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/engine.rb:452:in `each_with_index'
+/usr/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/engine.rb:452:in `tabulate'
+/usr/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/engine.rb:417:in `_to_tree'
+/usr/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/usr/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/usr/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
+/usr/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/usr/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/usr/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/usr/lib/ruby/gems/3.0.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+/usr/bin/sass:23:in `load'
+/usr/bin/sass:23:in `<main>'
+*/
+body {
+  white-space: pre;
+  font-family: "Roboto", sans-serif;
+  content: "Error: Inconsistent indentation: 1 space was used for indentation, but the rest of the document was indented using 2 spaces.\A         on line 94 of ./style/style.css\A \A 89:   flex-basis: 100%;\A 90: }\A 91: \A 92: \A 93: .box {\A 94:  border: 2px solid grey;\A 95:  border-radius: 15px; \A 96: }\A 97: \A 98: footer {\A 99: background-color: black;";
 }
 
 .navbar {
-font-family: "Shrikhand", cursive;
-text-align: center;
-box-shadow: 0px 3px 3px lightgray;
-padding: 5px;
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  -webkit-box-shadow: 0px 3px 3px lightgray;
+          box-shadow: 0px 3px 3px lightgray;
+  padding: 5px;
 }
 
 .navbar {
-overflow: hidden;
-background-color: white;
-position: fixed;
-top: 0px;
-width: 100%;
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  width: 100%;
 }
 
 .navbar a {
-display: flex;
-color: black;
-justify-content: center;
-align-items: center;
-padding: 14px 16px;
-text-decoration: none;
-font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
 }
 
 .navbar a:hover {
-background: white;
-color: black;
+  background: white;
+  color: black;
 }
 
 body {
-margin: 0px;
-font-family: "Roboto", sans-serif;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
 }
 
 main {
-display: flex;
-flex-flow: column wrap;
-align-items: center;
-justify-content: center;
-gap: 16px;
-text-align: center;
-padding: 18px;
-height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16px;
+  text-align: center;
+  padding: 18px;
+  height: auto;
 }
 
 .belleville {
-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 .banderole {
-display: flex;
-flex-flow: row nowrap;
-align-items: center;
-justify-content: center;
-background-color: #f2f2f2;
-gap: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f2f2f2;
+  gap: 5px;
 }
 
 .belleville button {
-border-radius: 35px;
-box-shadow: 5px 5px 10px -3px lightslategray;
-border: none;
-color: white;
-font-weight: bold;
-font-size: 15px;
-background-image: linear-gradient(to top,#9356DC,#FF79DA);
-padding: 10px 15px;
-margin: 5px;
+  border-radius: 35px;
+  -webkit-box-shadow: 5px 5px 10px -3px lightslategray;
+          box-shadow: 5px 5px 10px -3px lightslategray;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  padding: 10px 15px;
+  margin: 5px;
 }
 
 .fonctionnement {
-display: flex;
-flex-flow: column wrap;
-flex-basis: 95%;
-font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -ms-flex-preferred-size: 95%;
+      flex-basis: 95%;
+  font-size: 30px;
 }
 
 .fonctionnement .box {
-display: flex;
-justify-content: center;
-align-content: space-around;
-background-color: #f2f2f2;
-border-radius: 35px;
-flex-basis: 95%;
-font-size: 30px;
-margin: 15px;
-padding: 15px;
-height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  background-color: #f2f2f2;
+  border-radius: 35px;
+  -ms-flex-preferred-size: 95%;
+      flex-basis: 95%;
+  font-size: 30px;
+  margin: 15px;
+  padding: 15px;
+  height: auto;
 }
 
 .resto {
-display: flex;
-flex-flow: column wrap;
-flex-basis: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -ms-flex-preferred-size: 95%;
+      flex-basis: 95%;
 }
 
-
 .resto .box2 {
-display: flex;
-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 
 .resto img {
-width: 95%;
-height: 250px;
-object-fit: cover;
-border-radius: 20px;
+  width: 95%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
 }
 
 .responsive {
-width: 100%;
-max-width: 400px;
-height: auto;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
 
 i .fas .fa-heart {
-background-image: linear-gradient(to top,#9356DC,#FF79DA);
-transition-duration: .25s;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
 }
 
 /*.belleville button {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5;
-}
-
-.belleville button {
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  transition: 0.5;
-}
-
-.belleville button:hover {
-  transition-duration: 2s;
-  opacity: 0.8;
-}*/
-
-
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5;
+      }
+      
+      .belleville button {
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        transition: 0.5;
+      }
+      
+      .belleville button:hover {
+        transition-duration: 2s;
+        opacity: 0.8;
+      }*/
 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   padding: 1px;
   margin-top: 30px;
-  height: auto; 
-  flex-basis: 100%;
+  height: auto;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
-
 .fonctionnement .box {
- border: 2px solid grey;
- border-radius: 15px; 
+  border: 2px solid grey;
+  border-radius: 15px;
 }
 
 footer {
-display: flex;
-flex-flow: column wrap;
-background-color: black;
-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  background-color: black;
+  color: white;
 }
 
 footer img {
   color: white;
 }
+/*# sourceMappingURL=style.css.map */

@@ -69,7 +69,7 @@ body {
 	text-align: center;
 	padding: 5px;
 	overflow: hidden;
-	background-color: yellow;
+	background-color: white;
 	position: fixed;
 	top: 0px;
 	width: 100%;
@@ -104,15 +104,17 @@ main {
 }
 
 .belleville {
-	background-color: gray;
+	background-color:lightgray;
 	flex-basis: 100%;
 	height: auto;
+	text-align: center;
+	flex-basis: 100%;
 }
 
-.belleville .banderole {
+.banderole {
 	@extend %fondgris;
 	display: flex;
-	flex-flow: column wrap;
+	flex-flow: row wrap;
 	align-items: center;
 	justify-content: center;
 	gap: 10px;
@@ -156,25 +158,29 @@ button .button {
 ol {
 	display: flex;
 	flex-flow: row wrap;
+	flex-basis: 100%;
 }
 
 li {
 	text-decoration-style: solid;
-	border-radius: 50%;
-	background-color: $primary;
-	color: white;
+	border-radius: 30%;
+	color: grey;
+	/*align-items: center;*/
+	justify-content: center;
+	width: 100%;
 }
 
-/*.resto {
+.resto {
 display: flex;
-flex-flow: column wrap;
+flex-flow: column nowrap;
 flex-basis: 100%;
 justify-content: space-between;
-}*/
+}
 
 .resto .box2 {
 	display: flex;
-	width: 100%;
+	flex-flow: column wrap;
+	flex-basis: 100%;
 	justify-content: space-between;
 }
 
@@ -192,6 +198,7 @@ justify-content: space-between;
 	display: flex;
 	width: 100%;
 	height: auto;
+	max-width: 250px;
 }
 
 footer {
@@ -199,8 +206,11 @@ footer {
 	flex-flow: column wrap;
 	background-color: black;
 	color: white;
+	text-decoration-style: none;
+	gap: 10px;
 }
 
-footer img {
+footer p {
+	font-family: "Shrikhand", cursive;
 	color: white;
 }

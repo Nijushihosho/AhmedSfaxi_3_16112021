@@ -1,3 +1,27 @@
+/*$colors: (
+		$primary: #9356dc,
+		$secondary: #ff79da,
+		$tertiary: #99e2d0,
+	)*/
+.navbar {
+  -webkit-box-shadow: 0px 3px 3px lightgray;
+          box-shadow: 0px 3px 3px lightgray;
+}
+
+button .button {
+  -webkit-box-shadow: 5px 5px 10px -3px lightslategray;
+          box-shadow: 5px 5px 10px -3px lightslategray;
+}
+
+button .button {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
+}
+
+.belleville .banderole, .box {
+  background-color: #f2f2f2;
+}
+
 /*
 Error: Inconsistent indentation: 1 space was used for indentation, but the rest of the document was indented using 2 spaces.
         on line 94 of ./style/style.css
@@ -40,11 +64,9 @@ body {
 .navbar {
   font-family: "Shrikhand", cursive;
   text-align: center;
-  -webkit-box-shadow: 0px 3px 3px lightgray;
-          box-shadow: 0px 3px 3px lightgray;
   padding: 5px;
   overflow: hidden;
-  background-color: white;
+  background-color: yellow;
   position: fixed;
   top: 0px;
   width: 100%;
@@ -90,89 +112,50 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 16px;
-  text-align: center;
-  padding: 18px;
+  /*gap: 16px;*/
+  /*text-align: center;*/
   height: auto;
 }
 
-.banderole {
+.belleville {
+  background-color: gray;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: auto;
+}
+
+.belleville .banderole {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #f2f2f2;
-  gap: 5px;
-  height: auto;
+  gap: 10px;
+  /*height: auto;*/
+  padding: 1rem;
 }
 
-.belleville {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  height: auto;
-  font-weight: 900;
-}
-
-.belleville button {
+button .button {
   border-radius: 35px;
-  -webkit-box-shadow: 5px 5px 10px -3px lightslategray;
-          box-shadow: 5px 5px 10px -3px lightslategray;
   border: none;
   color: white;
   font-weight: bold;
-  font-size: 15px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
-  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  font-size: 50px;
   padding: 10px 15px;
   margin: 5px;
 }
 
 .fonctionnement {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -ms-flex-preferred-size: 95%;
-      flex-basis: 95%;
-  font-size: 30px;
-}
-
-.fonctionnement .box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
-  background-color: #f2f2f2;
-  -ms-flex-preferred-size: 95%;
-      flex-basis: 95%;
-  font-size: 30px;
-  margin: 15px;
-  padding: 15px;
-  height: auto;
-  border: 2px solid grey;
-  border-radius: 15px;
-}
-
-.resto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
@@ -181,55 +164,7 @@ main {
       flex-basis: 95%;
 }
 
-.resto .resto .box2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 95%;
-  max-width: 250px;
-}
-
-.resto .resto .box2 .resto img {
-  width: 95%;
-  height: auto;
-  max-width: 250px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 20px;
-}
-
-.resto .resto .box2 .resto img .responsive {
-  width: 95%;
-  max-width: 200px;
-  height: auto;
-}
-
-i .fas .fa-heart {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
-  background-image: linear-gradient(to top, #9356DC, #FF79DA);
-  -webkit-transition-duration: .25s;
-          transition-duration: .25s;
-}
-
-/*.belleville button {
-        cursor: pointer;
-        display: inline-block;
-        position: relative;
-        transition: 0.5;
-      }
-      
-      .belleville button {
-        position: absolute;
-        opacity: 0;
-        top: 0;
-        transition: 0.5;
-      }
-      
-      .belleville button:hover {
-        transition-duration: 2s;
-        opacity: 0.8;
-      }*/
-main {
+.box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,11 +172,77 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  padding: 1px;
-  margin-top: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-preferred-size: 95%;
+      flex-basis: 95%;
+  font-size: 30px;
+  margin: 15px;
+  /*padding: 15px;*/
   height: auto;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  border: 2px solid grey;
+  border-radius: 25px;
+}
+
+ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+li {
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+  border-radius: 50%;
+  background-color: #9356dc;
+  color: white;
+}
+
+/*.resto {
+display: flex;
+flex-flow: column wrap;
+flex-basis: 100%;
+justify-content: space-between;
+}*/
+.resto .box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.resto img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 30px;
+}
+
+.responsive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
 }
 
 footer {

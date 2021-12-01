@@ -1,24 +1,27 @@
-$colors: ( 
-$primary: #9356DC,
-$secondary: #FF79DA,
-$tertiary: #99E2D0, 
-)
+/*$colors: (
+		$primary: #9356dc,
+		$secondary: #ff79da,
+		$tertiary: #99e2d0,
+	)*/
+  
+  $primary: #9356dc;
+  $secondary: #ff79da;
+  $tertiary: #99e2d0;
 
-%shadow {
-  box-shadow: 0px 3px 3px lightgray;
+  %shadow {
+	box-shadow: 0px 3px 3px lightgray;
 }
 
 %shadow2 {
-  box-shadow: 5px 5px 10px -3px lightslategray;
+	box-shadow: 5px 5px 10px -3px lightslategray;
 }
 
-
 %background {
-      background-image: linear-gradient(to top,$primary, $secondary);
-    }
+	background-image: linear-gradient(to top, $primary, $secondary);
+}
 
 %fondgris {
-  background-color: #f2f2f2;
+	background-color: #f2f2f2;
 }
 
 /*
@@ -55,113 +58,113 @@ Backtrace:
 /usr/bin/sass:23:in `<main>'
 */
 body {
-  white-space: pre;
-  font-family: "Roboto", sans-serif;
-  content: "Error: Inconsistent indentation: 1 space was used for indentation, but the rest of the document was indented using 2 spaces.\A         on line 94 of ./style/style.css\A \A 89:   flex-basis: 100%;\A 90: }\A 91: \A 92: \A 93: .box {\A 94:  border: 2px solid grey;\A 95:  border-radius: 15px; \A 96: }\A 97: \A 98: footer {\A 99: background-color: black;"; }
+	white-space: pre;
+	font-family: "Roboto", sans-serif;
+	content: "Error: Inconsistent indentation: 1 space was used for indentation, but the rest of the document was indented using 2 spaces.\A         on line 94 of ./style/style.css\A \A 89:   flex-basis: 100%;\A 90: }\A 91: \A 92: \A 93: .box {\A 94:  border: 2px solid grey;\A 95:  border-radius: 15px; \A 96: }\A 97: \A 98: footer {\A 99: background-color: black;";
+}
 
-  .navbar {
-    @extend %shadow;
-    font-family: "Shrikhand", cursive;
-    text-align: center;
-    padding: 5px;
-    overflow: hidden;
-    background-color: white;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-      .navbar a {
-        display: flex;
-        color: black;
-        justify-content: center;
-        align-items: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 15px;
-          .navbar a:hover {
-              background: white;
-              color: black;
-           }
-          }
-        }
+.navbar {
+	@extend %shadow;
+	font-family: "Shrikhand", cursive;
+	text-align: center;
+	padding: 5px;
+	overflow: hidden;
+	background-color: yellow;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	.navbar a {
+		display: flex;
+		color: black;
+		justify-content: center;
+		align-items: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 15px;
+		.navbar a:hover {
+			background: white;
+			color: black;
+		}
+	}
+}
 
-    body {
-      margin: 0px;
-      font-family: "Roboto", sans-serif;
-      }
-      
-      main {
-      display: flex;
-      flex-flow: column wrap;
-      align-items: center;
-      justify-content: center;
-      /*gap: 16px;*/
-      /*text-align: center;*/
-      height: auto;
-      }
+body {
+	margin: 0px;
+	font-family: "Roboto", sans-serif;
+}
+
+main {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+	/*gap: 16px;*/
+	/*text-align: center;*/
+	height: auto;
+}
 
 .belleville {
-background-color:gray;  
-flex-basis: 100%;
-height: auto;
+	background-color: gray;
+	flex-basis: 100%;
+	height: auto;
 }
-    
-      
+
 .belleville .banderole {
-      @extend %fondgris;
-      display: flex;
-      flex-flow: column wrap;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      /*height: auto;*/
-      padding: 1rem;
-      }
-    
-    button .button {
-    @extend %background;
-    @extend %shadow2;
-    border-radius: 35px;
-    border: none;
-    color: white;
-    font-weight: bold;
-    font-size: 50px;
-    padding: 10px 15px;
-    margin: 5px;
-      }
-      
-    .fonctionnement {
-      align-content: center;
-      flex-flow: column wrap;
-      flex-basis: 95%;
-      }
-      
-    .box {
-      @extend %fondgris;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      align-content: center;
-      flex-basis: 95%;
-      font-size: 30px;
-      margin: 15px;
-      /*padding: 15px;*/
-      height: auto;
-      border: 2px solid grey;
-      border-radius: 25px;
-    }
+	@extend %fondgris;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	/*height: auto;*/
+	padding: 1rem;
+}
 
-    ol {
-      display: flex;
-      flex-flow: row wrap;
-    }
+button .button {
+	@extend %background;
+	@extend %shadow2;
+	border-radius: 35px;
+	border: none;
+	color: white;
+	font-weight: bold;
+	font-size: 50px;
+	padding: 10px 15px;
+	margin: 5px;
+}
 
-  li {
-            text-decoration-style: solid;
-            border-radius: 50%;
-            background-color: $primary;
-            color: white;
-        }
-    
+.fonctionnement {
+	align-content: center;
+	flex-flow: column wrap;
+	flex-basis: 95%;
+}
+
+.box {
+	@extend %fondgris;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+	flex-basis: 95%;
+	font-size: 30px;
+	margin: 15px;
+	/*padding: 15px;*/
+	height: auto;
+	border: 2px solid grey;
+	border-radius: 25px;
+}
+
+ol {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+li {
+	text-decoration-style: solid;
+	border-radius: 50%;
+	background-color: $primary;
+	color: white;
+}
+
 /*.resto {
 display: flex;
 flex-flow: column wrap;
@@ -170,34 +173,34 @@ justify-content: space-between;
 }*/
 
 .resto .box2 {
-display: flex;
-width: 100%;
-justify-content: space-between;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
 }
 
 .resto img {
-display: flex; 
-flex-flow: column wrap;
-width: 100%;
-max-width: 250px;
-height: auto;
-object-fit: cover;
-border-radius: 30px;
+	display: flex;
+	flex-flow: column wrap;
+	width: 100%;
+	max-width: 250px;
+	height: auto;
+	object-fit: cover;
+	border-radius: 30px;
 }
- 
+
 .responsive {
-display: flex;
-width: 100%;
-height: auto;
+	display: flex;
+	width: 100%;
+	height: auto;
 }
-      
+
 footer {
-display: flex;
-flex-flow: column wrap;
-background-color: black;
-color: white;
+	display: flex;
+	flex-flow: column wrap;
+	background-color: black;
+	color: white;
 }
-      
+
 footer img {
-color: white;
+	color: white;
 }

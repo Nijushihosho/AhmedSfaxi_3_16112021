@@ -24,6 +24,10 @@
 	background-color: #f2f2f2;
 }
 
+%gris {
+	background-color: lightgray;
+}
+
 /*
 Error: Inconsistent indentation: 1 space was used for indentation, but the rest of the document was indented using 2 spaces.
         on line 94 of ./style/style.css
@@ -64,7 +68,7 @@ body {
 }
 
 .navbar {
-	@extend %shadow;
+	@extend %shadow2;
 	font-family: "Shrikhand", cursive;
 	text-align: center;
 	padding: 5px;
@@ -101,47 +105,49 @@ main {
 	/*gap: 16px;*/
 	/*text-align: center;*/
 	height: auto;
-}
-
-.belleville {
-	background-color:lightgray;
-	flex-basis: 100%;
-	height: auto;
-	text-align: center;
-	flex-basis: 100%;
+	width: 100%;
 }
 
 .banderole {
-	@extend %fondgris;
+	@extend %gris;
 	display: flex;
 	flex-flow: row wrap;
 	align-items: center;
 	justify-content: center;
 	gap: 10px;
-	/*height: auto;*/
-	padding: 1rem;
+	height: auto;
+	padding-top: 15px;
+	width: 100%;
 }
 
-button .button {
+.button {
 	@extend %background;
 	@extend %shadow2;
 	border-radius: 35px;
 	border: none;
 	color: white;
-	font-weight: bold;
-	font-size: 50px;
+	font-size: 20px;
 	padding: 10px 15px;
 	margin: 5px;
 }
 
+.belleville {
+	@extend %fondgris;
+	width: 100%;
+	text-align: center;
+}
+
+
 .fonctionnement {
+	display: flex;
 	align-content: center;
 	flex-flow: column wrap;
-	flex-basis: 95%;
+	width: 100%;
 }
 
 .box {
 	@extend %fondgris;
+	@extend %shadow2;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
@@ -151,13 +157,14 @@ button .button {
 	margin: 15px;
 	/*padding: 15px;*/
 	height: auto;
-	border: 2px solid grey;
+	border: 2px solid lightgray;
 	border-radius: 25px;
 }
 
 ol {
 	display: flex;
 	flex-flow: row wrap;
+	align-items: center;
 	flex-basis: 100%;
 }
 
@@ -165,7 +172,7 @@ li {
 	text-decoration-style: solid;
 	border-radius: 30%;
 	color: grey;
-	/*align-items: center;*/
+	align-items: center;
 	justify-content: center;
 	width: 100%;
 }

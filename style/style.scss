@@ -94,29 +94,29 @@ body {
       flex-flow: column wrap;
       align-items: center;
       justify-content: center;
-      gap: 16px;
+      /*gap: 16px;*/
       /*text-align: center;*/
       height: auto;
       }
+
+.belleville {
+background-color:gray;  
+flex-basis: 100%;
+height: auto;
+}
+    
       
-      .banderole {
+.belleville .banderole {
       @extend %fondgris;
       display: flex;
-      /*flex-flow: column wrap;*/
+      flex-flow: column wrap;
       align-items: center;
       justify-content: center;
-      gap: 0px 5px 0px 0px;
-      height: auto;
-      flex-basis: 100%;
+      gap: 10px;
+      /*height: auto;*/
+      padding: 1rem;
       }
-      
-
-    .belleville {
-    background-color:gray;  
-    flex-basis: 100%;
-    height: auto;
-    }
-        
+    
     button .button {
     @extend %background;
     @extend %shadow2;
@@ -130,15 +130,9 @@ body {
       }
       
     .fonctionnement {
-      display: flex;
       align-content: center;
       flex-flow: column wrap;
       flex-basis: 95%;
-      }
-
-      h2 {
-        display: flex;
-        text-align: left;
       }
       
     .box {
@@ -153,58 +147,49 @@ body {
       /*padding: 15px;*/
       height: auto;
       border: 2px solid grey;
-      border-radius: 15px;
+      border-radius: 25px;
     }
 
     ol {
       display: flex;
       flex-flow: row wrap;
-        ol>li {
+    }
+
+  li {
             text-decoration-style: solid;
             border-radius: 50%;
             background-color: $primary;
             color: white;
         }
-    }
     
-.resto {
+/*.resto {
 display: flex;
 flex-flow: column wrap;
 flex-basis: 100%;
 justify-content: space-between;
-}
+}*/
 
 .resto .box2 {
 display: flex;
 width: 100%;
-max-width: 250px;
 justify-content: space-between;
 }
 
 .resto img {
 display: flex; 
+flex-flow: column wrap;
 width: 100%;
-height: auto;
 max-width: 250px;
+height: auto;
 object-fit: cover;
-border-radius: 20px;
+border-radius: 30px;
 }
  
 .responsive {
 display: flex;
 width: 100%;
-max-width: 400px;
 height: auto;
 }
-
-/*main {
-display: flex;
-flex-flow: row wrap;
-padding: 1px;
-margin-top: 30px;
-height: auto; 
-flex-basis: 100%;
-}*/
       
 footer {
 display: flex;

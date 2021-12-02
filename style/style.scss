@@ -127,7 +127,7 @@ main {
 	border: none;
 	color: white;
 	font-size: 20px;
-	padding: 10px 15px;
+	padding: 12px 16px;
 	margin: 5px;
 }
 
@@ -140,20 +140,17 @@ main {
 
 .fonctionnement {
 	display: flex;
-	justify-content: flex-start;
-	align-content: center;
 	flex-flow: column wrap;
-	width: 100%;
+	width: 95%;
+	height: auto;
+	justify-content: center;
 }
 
 .box {
 	@extend %fondgris;
 	@extend %shadow2;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-content: center;
-	flex-basis: 95%;
+	text-align: center;
+	width: 95%;
 	font-size: 30px;
 	margin: 15px;
 	/*padding: 15px;*/
@@ -162,19 +159,10 @@ main {
 	border-radius: 25px;
 }
 
-ol {
-	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
-	flex-basis: 100%;
-}
-
 li {
 	text-decoration-style: solid;
 	border-radius: 30%;
 	color: grey;
-	align-items: center;
-	justify-content: center;
 	width: 100%;
 }
 

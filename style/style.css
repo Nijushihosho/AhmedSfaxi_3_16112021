@@ -13,7 +13,7 @@
   background-image: linear-gradient(to top, #9356dc, #ff79da);
 }
 
-.belleville, .box {
+.belleville, .box, .resto {
   background-color: #f2f2f2;
 }
 
@@ -155,6 +155,9 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-orient: vertical;
@@ -222,13 +225,13 @@ li {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  width: 95%;
+  height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .resto .box2 {
@@ -239,11 +242,18 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  width: 100%;
+  height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .box2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 .resto img {
@@ -255,11 +265,10 @@ li {
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
   width: 100%;
-  max-width: 250px;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 30px;
+  border-radius: 30px 30px 0px 0px;
 }
 
 .responsive {
@@ -268,7 +277,6 @@ li {
   display: flex;
   width: 100%;
   height: auto;
-  max-width: 250px;
 }
 
 footer {

@@ -1,0 +1,29 @@
+$primary: #9356dc;
+$secondary: #ff79da;
+$tertiary: #99e2d0;
+
+body {
+	margin: 0px;
+	font-family: "Roboto", sans-serif;
+}
+
+
+%shadow {
+	box-shadow: 0px 3px 3px lightgray;
+}
+
+%shadow2 {
+	box-shadow: 5px 5px 10px -3px lightslategray;
+}
+
+%background {
+	background-image: linear-gradient(to top, $primary, $secondary);
+}
+
+%fondgris {
+	background-color: #f2f2f2;
+}
+
+%gris {
+	background-color: lightgray;
+}

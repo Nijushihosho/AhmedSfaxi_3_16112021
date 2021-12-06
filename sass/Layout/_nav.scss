@@ -1,0 +1,24 @@
+.navbar {
+	@extend %shadow2;
+	font-family: "Shrikhand", cursive;
+	text-align: center;
+	padding: 5px;
+	overflow: hidden;
+	background-color: white;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	.navbar a {
+		display: flex;
+		color: black;
+		justify-content: center;
+		align-items: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 15px;
+		.navbar a:hover {
+			background: white;
+			color: black;
+		}
+	}
+}

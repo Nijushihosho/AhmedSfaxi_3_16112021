@@ -7,7 +7,7 @@
         width: 100%;
         height: auto;
         justify-content: center;
-		gap: 12px;
+		gap: 15px;
 		@media (max-width: 814px) { 
 			flex-flow: column wrap;
 		}
@@ -16,16 +16,20 @@
 	   background-color: white;
 text-align: center;
 width: 100%;
-font-size: 30px;
+font-size: 25px;
 margin: 0 auto;
 /*padding: 15px;*/
 height: auto;
 border: 2px solid lightgray;
-   }
+		& .li {
+			height: 25px;
+			width: 25px;
+			background-color: $primary;
+  			border-radius: 50%;
+  			display: inline-block;
+		}
+   	}	
 }
-
-
-
 
 /*main {
 	display: flex;
@@ -53,13 +57,12 @@ border: 2px solid lightgray;
 	border: 2px solid lightgray;
 	border-radius: 30px;
 	color: gray;
-	&:hover {
+		&:hover {
 		background-color: $secondary;
-		& i .fas {
+			& i.fas {
 			margin-right: 20px;
-			
 			}
-	}
+		}
 }
 
 .box2 {
@@ -74,7 +77,7 @@ border: 2px solid lightgray;
 .resto {
 display: flex;
 flex-flow: column wrap;
-flex-basis: 95%;
+flex-basis: 100%;
 height: auto;
 justify-content: center;
 @extend %fondgris;
@@ -83,7 +86,7 @@ justify-content: center;
 .resto img {
 	display: flex;
 	flex-flow: column wrap;
-	width: 100%;
+	width: 95%;
 	height: auto;
 	object-fit: cover;
 	border-radius: 30px 30px 0px 0px;

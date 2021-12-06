@@ -6,10 +6,9 @@
         height: auto;
         justify-content: center;
     }
-   &li {
-	text-decoration-style: solid;
+   & li {
 	border-radius: 30%;
-	color: grey;
+	bakground-color: grey;
 	width: 100%;
    }
 }
@@ -23,13 +22,6 @@ main {
 	/*text-align: center;*/
 	height: auto;
 	width: 100%;
-}
-.fonctionnement {
-	display: flex;
-	flex-flow: column wrap;
-	width: 95%;
-	height: auto;
-	justify-content: center;
 }
 
 .box {

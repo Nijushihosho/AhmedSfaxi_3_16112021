@@ -1,5 +1,5 @@
 .navbar {
-	@extend %shadow2;
+	@extend %shadow;
 	font-family: "Shrikhand", cursive;
 	text-align: center;
 	padding: 5px;
@@ -18,7 +18,7 @@
 		font-size: 15px;
 		.navbar a:hover {
 			background: white;
-			color: black;
+			color: black;			
 		}
 	}
 }

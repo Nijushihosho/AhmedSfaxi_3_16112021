@@ -6,18 +6,14 @@ body {
 	font-family: "Roboto", sans-serif;
 }
 
+%shadow2 {
+	box-shadow: 5px 5px 10px -3px lightslategray;
+}
 
 %shadow {
 	box-shadow: 0px 3px 3px lightgray;
 }
 
-%shadow2 {
-	box-shadow: 5px 5px 10px -3px lightslategray;
-}
-
-%background {
-	background-image: linear-gradient(to top, $primary, $secondary);
-}
 
 %fondgris {
 	background-color: #f2f2f2;

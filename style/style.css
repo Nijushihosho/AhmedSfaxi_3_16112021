@@ -9,9 +9,9 @@
           flex-flow: row nowrap;
   width: 100%;
   height: auto;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 12px;
 }
 
@@ -26,7 +26,7 @@
 
 .fonctionnement li {
   background-color: white;
-  text-align: left;
+  text-align: center;
   width: 100%;
   font-size: 30px;
   margin: 0 auto;
@@ -46,10 +46,22 @@
 	width: 100%;
 }*/
 .box {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   font-size: 20px;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   /*padding: 15px;*/
   height: auto;
   border: 2px solid lightgray;
@@ -58,7 +70,11 @@
 }
 
 .box:hover {
-  background-color: #9356dc;
+  background-color: #ff79da;
+}
+
+.box:hover i .fas {
+  margin-right: 20px;
 }
 
 .box2 {

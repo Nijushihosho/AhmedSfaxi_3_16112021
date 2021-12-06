@@ -12,6 +12,7 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  gap: 12px;
 }
 
 @media (max-width: 814px) {
@@ -54,6 +55,10 @@
   border: 2px solid lightgray;
   border-radius: 30px;
   color: gray;
+}
+
+.box:hover {
+  background-color: #9356dc;
 }
 
 .box2 {

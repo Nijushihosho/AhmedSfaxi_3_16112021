@@ -1,3 +1,5 @@
+@use "../Utils/variables";
+
 .fonctionnement {
     & ol {
         display: flex;
@@ -5,11 +7,12 @@
         width: 100%;
         height: auto;
         justify-content: flex-start;
-		@media (max-width: 814px) {
+		gap: 12px;
+		@media (max-width: 814px) { 
 			flex-flow: column wrap;
 		}
     }
-   & li {
+   	& li {
 	   background-color: white;
 text-align: left;
 width: 100%;
@@ -44,6 +47,9 @@ border: 2px solid lightgray;
 	border: 2px solid lightgray;
 	border-radius: 30px;
 	color: gray;
+	&:hover {
+		background-color: $secondary;
+	}
 }
 
 .box2 {
@@ -53,9 +59,7 @@ border: 2px solid lightgray;
 	height: auto;
 	justify-content: center;
 	margin: 0 auto;
-	
 }
-
 
 .resto {
 display: flex;

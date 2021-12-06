@@ -1,40 +1,49 @@
 .fonctionnement {
     & ol {
         display: flex;
-        flex-flow: column wrap;
-        width: 95%;
+        flex-flow: row nowrap;
+        width: 100%;
         height: auto;
-        justify-content: center;
+        justify-content: flex-start;
+		@media (max-width: 814px) {
+			flex-flow: column wrap;
+		}
     }
    & li {
-	border-radius: 30%;
-	bakground-color: grey;
-	width: 100%;
+	   background-color: white;
+text-align: left;
+width: 100%;
+font-size: 30px;
+margin: 0 auto;
+/*padding: 15px;*/
+height: auto;
+border: 2px solid lightgray;
    }
 }
 
-main {
+/*main {
 	display: flex;
 	flex-flow: column wrap;
 	align-items: center;
 	justify-content: center;
 	/*gap: 16px;*/
-	/*text-align: center;*/
+	/*text-align: center;
 	height: auto;
 	width: 100%;
-}
+}*/
 
 .box {
 	@extend %fondgris;
 	@extend %shadow2;
 	text-align: center;
-	width: 95%;
-	font-size: 30px;
+	width: 100%;
+	font-size: 20px;
 	margin: 0 auto;
 	/*padding: 15px;*/
 	height: auto;
 	border: 2px solid lightgray;
-	border-radius: 25px;
+	border-radius: 30px;
+	color: gray;
 }
 
 .box2 {

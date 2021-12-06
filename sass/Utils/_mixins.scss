@@ -1,5 +1,5 @@
-@mixin button ($colors:$primary) {
-background-color:darken ($colors, 20%);
+@mixin button ($primary, $secondary) {
+background-color:darken ($color, 20%);
 }
 
 

@@ -56,8 +56,6 @@ main {
 }
 
 
-
-
 .resto {
 display: flex;
 flex-flow: column wrap;
@@ -66,6 +64,7 @@ height: auto;
 justify-content: center;
 @extend %fondgris;
 }
+
 .resto img {
 	display: flex;
 	flex-flow: column wrap;

@@ -1,0 +1,13 @@
+footer {
+	display: flex;
+	flex-flow: column wrap;
+	background-color: black;
+	color: white;
+	text-decoration-style: none;
+	gap: 10px;
+}
+
+footer p {
+	font-family: "Shrikhand", cursive;
+	color: white;
+}

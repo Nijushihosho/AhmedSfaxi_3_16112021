@@ -9,10 +9,10 @@
           flex-flow: row nowrap;
   width: 100%;
   height: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 15px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 20px;
 }
 
 @media (max-width: 814px) {
@@ -25,67 +25,54 @@
 }
 
 .fonctionnement li {
-  background-color: white;
-  text-align: center;
-  width: 100%;
-  font-size: 25px;
-  margin: 0 auto;
-  /*padding: 15px;*/
-  height: auto;
-  border: 2px solid lightgray;
-}
-
-.fonctionnement li .li {
-  height: 25px;
-  width: 25px;
-  background-color: #9356dc;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-/*main {
-	display: flex;
-	flex-flow: column wrap;
-	align-items: center;
-	justify-content: center;
-	/*gap: 16px;*/
-/*text-align: center;
-	height: auto;
-	width: 100%;
-}*/
-.box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  text-align: left;
+  width: 100%;
+  margin: 0 auto;
+  /*padding: 15px;*/
+  height: auto;
+  border: 2px solid lightgray;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
   font-size: 20px;
   /*margin: 0 auto;*/
   /*padding: 15px;*/
-  height: auto;
-  border: 2px solid lightgray;
+  /*height: auto;*/
+  /*border: 2px solid lightgray;*/
   border-radius: 30px;
   color: gray;
 }
 
-.box:hover {
+.fonctionnement li:hover {
   background-color: #ff79da;
 }
 
-.box:hover i.fas {
+.fonctionnement .li {
+  height: 30px;
+  width: 30px;
+  background-color: #9356dc;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fonctionnement i .fas {
   margin-right: 20px;
 }
 
-.box2 {
+.fonctionnement .box2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,7 +88,7 @@
   margin: 0 auto;
 }
 
-.resto {
+.fonctionnement .resto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,7 +104,7 @@
           justify-content: center;
 }
 
-.resto img {
+.fonctionnement .resto img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,7 +156,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.box, .button {
+.fonctionnement li, .button {
   -webkit-box-shadow: 5px 5px 10px -3px lightslategray;
           box-shadow: 5px 5px 10px -3px lightslategray;
 }
@@ -179,7 +166,7 @@ body {
           box-shadow: 0px 3px 3px lightgray;
 }
 
-.box, .resto, .belleville {
+.fonctionnement li, .fonctionnement .resto, .belleville {
   background-color: #f2f2f2;
 }
 

@@ -10,6 +10,10 @@
 	height: auto;
 	border-radius: 25px;
 	background-color: white;
+	@media laptop {
+		max-width: 1440px;
+	}
+
 	& .vignette .vignette_image {
 
 	}

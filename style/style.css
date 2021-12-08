@@ -185,6 +185,12 @@ body {
   background-color: white;
 }
 
+@media laptop {
+  .resto_vignette {
+    max-width: 1440px;
+  }
+}
+
 .resto_vignette .resto img {
   display: -webkit-box;
   display: -ms-flexbox;

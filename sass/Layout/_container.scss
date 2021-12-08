@@ -1,7 +1,23 @@
-.container .box2 {
+.resto {
 	display: flex;
-	justify-content: space-between;
-	width: 95%;
-	border-radius: 30px;
-	/*margin-bottom: 15px;*/
+	flex-basis: 100%;
+	flex-flow: column wrap;
+	@extend %fondgris;
+	height: auto;
+}
+
+.resto_vignette {
+	height: auto;
+	border-radius: 25px;
+	background-color: white;
+	& .vignette .vignette_image {
+
+	}
+	& .resto img {
+		display: flex;
+		flex-flow: column wrap;
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+	}
 }

@@ -2,7 +2,6 @@ footer {
 	display: flex;
 	flex-flow: column wrap;
 	background-color: black;
-	color: white;
 	text-decoration: none;
 	gap: 10px;
 }
@@ -10,4 +9,5 @@ footer {
 footer p {
 	font-family: "Shrikhand", cursive;
 	color: white;
+	text-decoration: none;
 }

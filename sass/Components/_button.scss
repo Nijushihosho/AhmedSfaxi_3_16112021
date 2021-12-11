@@ -1,0 +1,10 @@
+.button {
+	background-image: linear-gradient($secondary, $primary);
+	@extend %shadow2;
+	border-radius: 35px;
+	border: none;
+	color: white;
+	font-size: 20px;
+	padding: 12px 16px;
+	margin: 10px;
+}

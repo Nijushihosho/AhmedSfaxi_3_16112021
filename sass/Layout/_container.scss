@@ -7,21 +7,21 @@
 }
 
 .resto_vignette {
+	width: 100%;
 	height: auto;
-	border-radius: 25px;
+	border-radius: 30px;
 	background-color: white;
-	@media laptop {
-		max-width: 1440px;
 	}
 
-	& .vignette .vignette_image {
-
+.vignette_image {
+border-radius: 30px;
 	}
-	& .resto img {
+
+.resto img {
 		display: flex;
 		flex-flow: column wrap;
 		width: 100%;
 		height: auto;
 		object-fit: cover;
-	}
-}
+		border-radius: 30px;
+	}	

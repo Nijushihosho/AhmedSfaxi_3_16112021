@@ -7,11 +7,25 @@
 }
 
 .resto_vignette {
-	width: 100%;
+	/*width: 100%;*/
 	height: auto;
 	border-radius: 30px;
 	background-color: white;
+	flex-basis: 100%;
+	& .description {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-content: center;
+		flex-basis: 95%;
+		& i {
+			flex-direction: row;
+			justify-content: flex-end;
+			align-items: flex-end;
+			flex-basis: 5%;
+		}
 	}
+}
 
 .vignette_image {
 border-radius: 30px;

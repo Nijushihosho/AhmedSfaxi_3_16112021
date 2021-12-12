@@ -58,10 +58,7 @@ Backtrace:
 /usr/bin/sass:23:in `load'
 /usr/bin/sass:23:in `<main>'
 */
-body {
-	font-family: "Roboto", sans-serif;
-	content: "Error: Inconsistent indentation: 1 space was used for indentation, but the rest of the document was indented using 2 spaces.\A         on line 94 of ./style/style.css\A \A 89:   flex-basis: 100%;\A 90: }\A 91: \A 92: \A 93: .box {\A 94:  border: 2px solid grey;\A 95:  border-radius: 15px; \A 96: }\A 97: \A 98: footer {\A 99: background-color: black;";
-}
+
 
 
 

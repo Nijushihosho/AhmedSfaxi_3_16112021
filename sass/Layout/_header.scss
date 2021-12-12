@@ -1,17 +1,18 @@
 .banderole {
-	@extend %gris;
-	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
-	justify-content: center;
-	gap: 10px;
-	width: 100%;
-	height: auto;
+@extend %gris;
+display: flex;
+flex-flow: row wrap;
+align-items: center;
+justify-content: center;
+gap: 10px;
+width: 100%;
+height: auto;
 }
 
 .belleville {
-	@extend %fondgris;
-	width: 100%;
-	text-align: center;
-	height: auto;
+@extend %fondgris;
+width: 100%;
+text-align: center;
+height: auto;
+max-width: 100%;
 }

@@ -8,21 +8,23 @@
 }
 
 .resto_vignette {
-	/*width: 100%;*/
-	height: auto;
 	border-radius: 30px;
 	background-color: white;
 	flex-basis: 100%;
 	margin: 25px;
 		& .description {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-content: center;
-			& i {
-			flex-direction: row;
-			justify-content: flex-end;
-			align-items: flex-end;
+		position: relative;
+		color: black;
+		h3,
+		p {
+			 margin: 10px;
+		}
+		 i {
+			font-size: 33px;
+			position: absolute;
+			right: 15px;
+			top: 50%;
+			transform: translateY(-50%) ;
 		}
 	}
 }

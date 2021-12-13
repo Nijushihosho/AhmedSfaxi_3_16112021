@@ -1,11 +1,14 @@
 
 .fonctionnement {
-    & ol {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: center;
+    	& ol {
         width: 100%;
         height: auto;
-		gap: 5x;
+		gap: 50px;
 		@media (max-width: 814px) {
-			 dilay: flex;
 		}
     }
    		& li  {	   
@@ -26,14 +29,33 @@ color: gray;
 				
 		}		
 }	
-/* les cercles violets des chiffres*/
-	   .badge {
+
+	   .list-group li {
+		background-color: #fafafa;
+		border-radius: 20px;
+		color: gray;
+		margin: 15px;
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-start;
 		align-items: center;
-		background-color: $primary;
-		border-radius: 50%;
-		color: white;		
+		&:hover {
+			background-color: $secondary;
+		}
 	}
 }
 
+
+/* les cercles violets des chiffres*/
+.badge {
+	background-color: $primary;
+	padding: 0.5rem;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	color: white;
+	margin: 1rem 1rem 1rem -1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+}

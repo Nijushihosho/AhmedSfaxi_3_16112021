@@ -121,19 +121,25 @@ body {
 }
 
 .fonctionnement {
-  /* les cercles violets des chiffres*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .fonctionnement ol {
   width: 100%;
   height: auto;
-  gap: 5x;
-}
-
-@media (max-width: 814px) {
-  .fonctionnement ol {
-    dilay: flex;
-  }
+  gap: 50px;
 }
 
 .fonctionnement li {
@@ -154,19 +160,45 @@ body {
   color: #9356dc;
 }
 
-.fonctionnement .badge {
+.fonctionnement .list-group li {
+  background-color: #fafafa;
+  border-radius: 20px;
+  color: gray;
+  margin: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.fonctionnement .list-group li:hover {
+  background-color: #ff79da;
+}
+
+/* les cercles violets des chiffres*/
+.badge {
   background-color: #9356dc;
+  padding: 0.5rem;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   color: white;
+  margin: 1rem 1rem 1rem -1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
 }
 
 .resto {

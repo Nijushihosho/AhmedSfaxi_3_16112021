@@ -5,11 +5,10 @@
 	justify-content: flex-start;
 	align-items: center;
     	& ol {
-        width: 100%;
-        height: auto;
-		gap: 50px;
-		@media (max-width: 814px) {
-		}
+			width: 100%;
+			height: auto;
+		/*@media (max-width: 814px) {
+		}*/
     }
    		& li  {	   
 /*flex-flow: row wrap;*/
@@ -18,7 +17,7 @@ height: auto;
 @extend %fondgris;
 @extend %shadow2;
 text-align: center;
-font-size: 25px;
+font-size: auto;
 border-radius: 25px;
 color: gray;
 			&:hover {
@@ -34,12 +33,15 @@ color: gray;
 		background-color: #fafafa;
 		border-radius: 20px;
 		color: gray;
-		margin: 15px;
+		margin: 15px 0px 15px 0px;
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
+		width: 97%;
+		height: auto;
+		gap: 20px;
 		&:hover {
-			background-color: $secondary;
+			background-color: rgb(230, 168, 230);
 		}
 	}
 }
@@ -57,5 +59,5 @@ color: gray;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 14px;
+	font-size: auto;
 }

@@ -139,7 +139,8 @@ body {
 .fonctionnement ol {
   width: 100%;
   height: auto;
-  gap: 50px;
+  /*@media (max-width: 814px) {
+		}*/
 }
 
 .fonctionnement li {
@@ -147,7 +148,7 @@ body {
   width: 100%;
   height: auto;
   text-align: center;
-  font-size: 25px;
+  font-size: auto;
   border-radius: 25px;
   color: gray;
 }
@@ -164,7 +165,7 @@ body {
   background-color: #fafafa;
   border-radius: 20px;
   color: gray;
-  margin: 15px;
+  margin: 15px 0px 15px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,10 +175,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 97%;
+  height: auto;
+  gap: 20px;
 }
 
 .fonctionnement .list-group li:hover {
-  background-color: #ff79da;
+  background-color: #e6a8e6;
 }
 
 /* les cercles violets des chiffres*/
@@ -198,7 +202,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 14px;
+  font-size: auto;
 }
 
 .resto {

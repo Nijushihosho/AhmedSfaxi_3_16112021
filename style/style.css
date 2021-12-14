@@ -223,19 +223,21 @@ body {
 
 .far {
   color: black;
-  background-clip: text;
+  background-clip: content-box;
   -webkit-background-clip: text;
-  opacity: 1;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ff79da), to(#9356dc));
-  background-image: linear-gradient(to right, #ff79da, #9356dc);
-  -webkit-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: 1/2;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-.far:hover .far {
-  opacity: 2;
-  -webkit-transform: translateY(-50%) scale(1.2);
-          transform: translateY(-50%) scale(1.2);
+.far:hover.far {
+  opacity: 1;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background-image: linear-gradient(#ff79da, #9356dc);
 }
 
 .resto {

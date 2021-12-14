@@ -1,12 +1,12 @@
 .far {
-    color: rebeccapurple;
+    color: black;
     background-clip: text;
     -webkit-background-clip: text;
     opacity: 1;
-    background-image: linear-gradient($secondary,$primary);
+    background-image: linear-gradient(to right,$secondary,$primary);
     transition: all 200ms ease-in-out;
         &:hover .far {
-    opacity: 1;
+    opacity: 2;
     transform: translateY(-50%) scale(1.2);
         }
-} 
+    }

@@ -33,7 +33,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.button, .fonctionnement li {
+.fonctionnement li {
   -webkit-box-shadow: 5px 5px 10px -3px lightslategray;
           box-shadow: 5px 5px 10px -3px lightslategray;
 }
@@ -112,18 +112,37 @@ body {
 .button {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background-image: linear-gradient(#ff79da, #9356dc);
+  -webkit-box-shadow: 5px 5px 10px -3px lightslategray;
+          box-shadow: 5px 5px 10px -3px lightslategray;
   border-radius: 35px;
   border: none;
   color: white;
   font-size: 20px;
   padding: 12px 16px;
   margin-bottom: 50px;
+  cursor: pointer;
+  -webkit-transition: all 450ms;
+  transition: all 450ms;
   /*&:hover {
+        box-shadow: darken(#000000, $amount: 20%);
+        text-shadow: lighten ( $secondary,$amount: 20%);
+    }*/
+}
+
+/*background-image: linear-gradient($secondary, $primary);
+	@extend %shadow2;
+	border-radius: 35px;
+	border: none;
+	color: white;
+	font-size: 20px;
+	padding: 12px 16px;
+	margin-bottom: 50px;
+	cursor: pointer;
+	transition: all 450ms;*/
+/*&:hover {
 		box-shadow: darken($colors: $secondary, $primary: 20%);
 		background-image:  ($secondary,$primary);
 	}*/
-}
-
 .fonctionnement {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -210,18 +229,18 @@ body {
 }
 
 .far {
-  color: rebeccapurple;
+  color: black;
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 1;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background-image: linear-gradient(#ff79da, #9356dc);
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff79da), to(#9356dc));
+  background-image: linear-gradient(to right, #ff79da, #9356dc);
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
 
 .far:hover .far {
-  opacity: 1;
+  opacity: 2;
   -webkit-transform: translateY(-50%) scale(1.2);
           transform: translateY(-50%) scale(1.2);
 }
@@ -313,6 +332,40 @@ footer {
 footer p {
   font-family: "Shrikhand", cursive;
   color: white;
+}
+
+.check {
+  background: #99e2d0;
+  cursor: pointer;
+  height: auto;
+  width: 0;
+  opacity: 0;
+  border-radius: 0px 15px 15px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: all;
+          transform: all;
+  -webkit-transition: width 0.4s ease-in-out, opacity 0.4s, ease-in-out, -webkit-transform 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out, opacity 0.4s, ease-in-out, -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s, ease-in-out;
+  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s, ease-in-out, -webkit-transform 0.4s ease-in-out;
+  -webkit-transition-property: width, opacity, -webkit-transform;
+  transition-property: width, opacity, -webkit-transform;
+  transition-property: transform, width, opacity;
+  transition-property: transform, width, opacity, -webkit-transform;
+  -webkit-transition-duration: 0.4s, 0.4s,0.4s;
+          transition-duration: 0.4s, 0.4s,0.4s;
+  -webkit-transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+          transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+  -webkit-transition-delay: 0s,0s,0s;
+          transition-delay: 0s,0s,0s;
 }
 
 /*

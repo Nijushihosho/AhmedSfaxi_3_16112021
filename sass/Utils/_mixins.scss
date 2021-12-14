@@ -1,18 +1,20 @@
 @mixin button-color {
 background-image:linear-gradient($secondary,$primary);
-box-shadow: 5px 5px 10px -3px lightslategray;
+box-shadow: 5px 5px 10px -3px darkgray;
 border-radius: 35px;
 border: none;
 color: white;
-font-size: 20px;
+font-size: 17px;
 padding: 12px 16px;
 margin-bottom: 50px;
 cursor: pointer;
-transition: all 450ms;
-    /*&:hover {
-        box-shadow: darken(#000000, $amount: 20%);
-        text-shadow: lighten ( $secondary,$amount: 20%);
-    }*/
+width: min-content;
+white-space: nowrap;
+transition: 0.2s ease-in-out;
+    &:hover {
+        filter: brightness(1.1); 
+        box-shadow: 7px 7px 12px -5px lightslategray;
+    }
 }
 
 

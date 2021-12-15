@@ -1,13 +1,25 @@
+
+
+
 .far {
     color: black;
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: 1;
+    opacity: 1;
+    grid-area: 1/2;
+    transition: 0.3s ease-in-out;
+        &:hover.far {
     background-clip: content-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
     grid-area: 1/2;
     transition: 0.3s ease-in-out;
-        &:hover.far {
+        &:hover.fas {
     opacity: 1;
+    background-clip: content-box;
     background-image: linear-gradient($secondary,$primary);
         }
     }
+}

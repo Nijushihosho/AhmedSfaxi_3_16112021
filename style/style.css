@@ -231,6 +231,18 @@ body {
   color: black;
   background-clip: content-box;
   -webkit-background-clip: text;
+  -webkit-text-fill-color: 1;
+  opacity: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: 1/2;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.far:hover.far {
+  background-clip: content-box;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
   -ms-grid-row: 1;
@@ -240,8 +252,9 @@ body {
   transition: 0.3s ease-in-out;
 }
 
-.far:hover.far {
+.far:hover.far:hover.fas {
   opacity: 1;
+  background-clip: content-box;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background-image: linear-gradient(#ff79da, #9356dc);
 }

@@ -11,7 +11,6 @@
 		}*/
     }
    		& li  {	   
-/*flex-flow: row wrap;*/
 width: 100%;  
 height: auto;
 @extend %fondgris;
@@ -41,6 +40,7 @@ color: gray;
 		height: auto;
 		gap: 20px;
 		&:hover {
+			cursor: pointer;
 			background-color: rgb(230, 168, 230);
 		}
 	}

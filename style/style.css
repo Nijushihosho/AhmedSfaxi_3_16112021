@@ -6,6 +6,12 @@
           box-sizing: border-box;
 }
 
+header {
+  margin: 0;
+  font-family: "Shrikhand", cursive;
+  font-size: 2.5rem;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -160,7 +166,6 @@ body {
 }
 
 .fonctionnement li {
-  /*flex-flow: row wrap;*/
   width: 100%;
   height: auto;
   text-align: center;
@@ -197,6 +202,7 @@ body {
 }
 
 .fonctionnement .list-group li:hover {
+  cursor: pointer;
   background-color: #e6a8e6;
 }
 

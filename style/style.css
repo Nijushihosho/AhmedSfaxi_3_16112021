@@ -228,10 +228,8 @@ body {
 }
 
 .far {
-  color: black;
-  background-clip: content-box;
+  background-clip: border-box;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: 1;
   opacity: 1;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
@@ -244,6 +242,19 @@ body {
   background-clip: content-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  opacity: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: 1/2;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.fas {
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 0;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
@@ -252,11 +263,19 @@ body {
   transition: 0.3s ease-in-out;
 }
 
-.far:hover.far:hover.fas {
+.fas:hover.fas {
   opacity: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: 1/2;
   background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-animation-fill-color: transparent;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background-image: linear-gradient(#ff79da, #9356dc);
+  cursor: pointer;
 }
 
 .resto {

@@ -227,7 +227,7 @@ body {
   font-size: auto;
 }
 
-.far {
+.description .far {
   background-clip: border-box;
   -webkit-background-clip: text;
   opacity: 1;
@@ -238,7 +238,7 @@ body {
   transition: 0.3s ease-in-out;
 }
 
-.far:hover.far {
+.description .far:hover.far {
   background-clip: content-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -251,11 +251,11 @@ body {
   cursor: pointer;
 }
 
-.fas {
+.description .fas {
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: 0;
+  opacity: 1;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: 1/2;
@@ -263,7 +263,7 @@ body {
   transition: 0.3s ease-in-out;
 }
 
-.fas:hover.fas {
+.description .fas:hover.fas {
   opacity: 1;
   -ms-grid-row: 1;
   -ms-grid-column: 2;

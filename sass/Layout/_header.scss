@@ -1,10 +1,13 @@
+header {
+    margin: 0;
+}
+
 .banderole {
 @extend %gris;
 display: flex;
 flex-flow: row wrap;
 align-items: center;
 justify-content: center;
-gap: 10px;
 width: 100%;
 height: auto;
 }

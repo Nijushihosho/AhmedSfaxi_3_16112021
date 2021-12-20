@@ -5,6 +5,9 @@ footer {
 	text-decoration: none;
 	gap: 10px;
 	padding-left: 15px;
+		& a {
+			color: white;
+		}
 }
 
 footer p {

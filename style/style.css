@@ -28,12 +28,22 @@ h2 {
 }
 
 h3 {
-  margin: 10px;
+  margin: 15px;
+}
+
+h4 {
+  padding: 0;
+  margin: 0px 0px 0px 10px;
 }
 
 a {
   text-decoration: none;
   color: white;
+  margin: 5px;
+}
+
+P {
+  margin: 10px;
 }
 
 footer {
@@ -439,14 +449,37 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border: 1px solid gray;
   border-radius: 20px;
   margin: 10px;
   background-color: white;
+  border: 2px solid red;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.menus_description .texte {
+  border: 2px solid violet;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.prix {
+  border: 2px solid blue;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 footer {

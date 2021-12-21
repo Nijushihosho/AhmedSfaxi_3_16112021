@@ -5,8 +5,57 @@ img {
     object-position: center;
 }
 
-main h2  {
-    font-family: "Shrikhand","sans-serif";
-    /*@include mixins.heart;*/
+main {
+    @extend %fondgris;
 }
+
+/*.description {
+    display: flex;
+    margin-top: -35px;
+    align-content: center;
+    align-items: center;
+}*/
+
+.menus_description {
+display: flex;
+flex-flow: column wrap;
+border: 1px solid gray;
+border-radius: 20px;
+margin: 10px;
+background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

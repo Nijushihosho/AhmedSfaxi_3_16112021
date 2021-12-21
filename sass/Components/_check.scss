@@ -5,10 +5,16 @@
     align-items: flex-end;
 }
 
-.check_anim   { 
-                & :hover {
-                overflow: hidden;
-                transform: all;
+.check_anim   {
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    align-items: center;
+    background: white;
+    color: $tertiary; 
+    border-radius: 50px;
+    overflow: hidden;
+    &:hover { 
                 justify-content: flex-end;
                 border: 2px solid green;
                 background: $tertiary;
@@ -17,6 +23,7 @@
                 justify-content: center;
                 cursor: pointer;
                 margin-right: 50px ;  
-                }
+        }
+}
 
                     

@@ -14,7 +14,7 @@ header {
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "sans-serif";
 }
 
 main {
@@ -24,7 +24,7 @@ main {
 h2 {
   padding: 0 14px;
   margin: 15px;
-  font-family: "Shrikhand","sans-serif";
+  font-family: "Shrikhand","cursive";
 }
 
 h3 {
@@ -48,11 +48,6 @@ P {
 
 footer {
   padding: 0 14px 15px 0px;
-}
-
-body {
-  margin: 0px;
-  font-family: "Roboto", sans-serif;
 }
 
 .fonctionnement li {
@@ -103,10 +98,6 @@ main, .belleville, .fonctionnement li, .resto {
 .navbar .navbar a .navbar a:hover {
   background: white;
   color: black;
-}
-
-header {
-  margin: 0;
 }
 
 .banderole {
@@ -484,6 +475,24 @@ img {
   font-weight: bold;
 }
 
+.bottom_page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.bottom_page .button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -511,18 +520,35 @@ footer p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
 }
 
-.check_anim .check :hover {
+.check_anim {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  color: #99e2d0;
+  border-radius: 50px;
   overflow: hidden;
-  -webkit-transform: all;
-          transform: all;
+}
+
+.check_anim:hover {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;

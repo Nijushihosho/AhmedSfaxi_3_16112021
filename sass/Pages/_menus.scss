@@ -81,7 +81,15 @@ flex-basis: 100%;
         font-weight: bold;
     }
 
-
+.bottom_page {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    & .button {
+    align-items: center;
+    margin: 15px;
+    }
+}
 
 
 

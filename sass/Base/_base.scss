@@ -8,7 +8,7 @@
 
 header {
     margin: 0;
-    font-family: "Shrikhand", cursive;
+    font-family: "Shrikhand", "cursive";
     font-size: 2.5rem;
 }
 
@@ -18,7 +18,8 @@ body {
 }
 
 main {
-    padding: 100px 0px;
+    padding: 200px 0px;
+    @extend %fondgris;
 }
 
 h2 {
@@ -27,6 +28,9 @@ h2 {
     font-family: "Shrikhand","sans-serif";
 }
 
+h3 {
+    margin: 10px;
+}
 
 a {
     text-decoration: none;

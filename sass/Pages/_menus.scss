@@ -5,16 +5,57 @@ img {
     object-position: center;
 }
 
-main {
-    @extend %fondgris;
+.titre_carte {
+flex-basis: 100%;
+margin: 25px;
+position: relative;
+	color: black;
+	 i {
+		font-size: 33px;
+		position: absolute;
+		right: 15px;
+		top: 50%;
+		transform: translateY(-50%) ;
+	}
 }
 
-/*.description {
-    display: flex;
-    margin-top: -35px;
-    align-content: center;
-    align-items: center;
-}*/
+
+.titre_carte .far {
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    opacity: 1;
+    grid-area: 1/2;
+    transition: 0.3s ease-in-out;
+        &:hover.far {
+        background-clip: content-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 1;
+        grid-area: 1/2;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        }
+    }
+
+.titre_carte .fas{
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 1;
+        grid-area: 1/2;
+        transition: 0.3s ease-in-out;
+            &:hover.fas {
+            opacity: 1;
+            grid-area: 1/2;
+            background-clip: content-box;
+            -webkit-background-clip: text;
+            -webkit-animation-fill-color: transparent;
+            transition: 0.3s ease-in-out;
+            background-image: linear-gradient($secondary,$primary);
+            cursor: pointer;
+        }
+    }
+
 
 .menus_description {
 display: flex;
@@ -23,7 +64,7 @@ border: 1px solid gray;
 border-radius: 20px;
 margin: 10px;
 background-color: white;
-}
+    }
 
 
 

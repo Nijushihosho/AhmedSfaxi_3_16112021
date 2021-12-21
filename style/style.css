@@ -1,5 +1,32 @@
-/* No CSS */
 @import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&family=Shrikhand&display=swap);
+.titre_carte .fas {
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: 1/2;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.titre_carte .fas:hover.fas {
+  opacity: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: 1/2;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-animation-fill-color: transparent;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background-image: linear-gradient(#ff79da, #9356dc);
+  cursor: pointer;
+}
+
+/* No CSS */
 ::before,
 ::after {
   -webkit-box-sizing: border-box;
@@ -8,7 +35,7 @@
 
 header {
   margin: 0;
-  font-family: "Shrikhand", cursive;
+  font-family: "Shrikhand", "cursive";
   font-size: 2.5rem;
 }
 
@@ -18,13 +45,17 @@ body {
 }
 
 main {
-  padding: 100px 0px;
+  padding: 200px 0px;
 }
 
 h2 {
   padding: 0 14px;
   margin: 15px;
   font-family: "Shrikhand","sans-serif";
+}
+
+h3 {
+  margin: 10px;
 }
 
 a {
@@ -51,7 +82,7 @@ body {
           box-shadow: 0px 3px 3px lightgray;
 }
 
-.belleville, .fonctionnement li, .resto, main {
+main, .belleville, .fonctionnement li, .resto {
   background-color: #f2f2f2;
 }
 
@@ -363,12 +394,74 @@ img {
      object-position: center;
 }
 
-/*.description {
-    display: flex;
-    margin-top: -35px;
-    align-content: center;
-    align-items: center;
-}*/
+.titre_carte {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin: 25px;
+  position: relative;
+  color: black;
+}
+
+.titre_carte i {
+  font-size: 33px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.titre_carte .far {
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  opacity: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: 1/2;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.titre_carte .far:hover.far {
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: 1/2;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.titre_carte .fas {
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: 1/2;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.titre_carte .fas:hover.fas {
+  opacity: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: 1/2;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-animation-fill-color: transparent;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background-image: linear-gradient(#ff79da, #9356dc);
+  cursor: pointer;
+}
+
 .menus_description {
   display: -webkit-box;
   display: -ms-flexbox;

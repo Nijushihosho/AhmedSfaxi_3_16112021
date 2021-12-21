@@ -1,19 +1,22 @@
-/*.check {
-    background: $tertiary;
-    cursor: pointer;
-    height: auto;
-    width: 0;
-    opacity: 0;
-    border-radius:0px 15px 15px 0px;
+.check {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: all;
-    &:hover:{
-    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s, ease-in-out;
-    transition-property: transform, width, opacity;
-    transition-duration: 0.4s, 0.4s,0.4s;
-    transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
-    transition-delay: 0s,0s,0s; 
+    justify-content: left;
+    align-content: flex-end;
+    align-items: flex-end;
 }
-}*/ 
+
+.check_anim   { 
+                & :hover {
+                overflow: hidden;
+                transform: all;
+                justify-content: flex-end;
+                border: 2px solid green;
+                background: $tertiary;
+                margin-left: auto;
+                font-weight: 900;
+                justify-content: center;
+                cursor: pointer;
+                margin-right: 50px ;  
+                }
+
+                    

@@ -460,7 +460,7 @@ img {
   border-radius: 20px;
   margin: 10px;
   background-color: white;
-  border: 2px solid red;
+  /*border: 2px solid red;*/
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
@@ -475,11 +475,13 @@ img {
   border: 2px solid blue;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-weight: bold;
 }
 
 footer {
@@ -505,25 +507,36 @@ footer p {
   color: white;
 }
 
-/*.check {
-    background: $tertiary;
-    cursor: pointer;
-    height: auto;
-    width: 0;
-    opacity: 0;
-    border-radius:0px 15px 15px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: all;
-    &:hover:{
-    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s, ease-in-out;
-    transition-property: transform, width, opacity;
-    transition-duration: 0.4s, 0.4s,0.4s;
-    transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
-    transition-delay: 0s,0s,0s; 
+.check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
-}*/
+
+.check_anim .check :hover {
+  overflow: hidden;
+  -webkit-transform: all;
+          transform: all;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border: 2px solid green;
+  background: #99e2d0;
+  margin-left: auto;
+  font-weight: 900;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  margin-right: 50px;
+}
+
 /*
 Error: Inconsistent indentation: 1 space was used for indentation, but the rest of the document was indented using 2 spaces.
         on line 94 of ./style/style.css

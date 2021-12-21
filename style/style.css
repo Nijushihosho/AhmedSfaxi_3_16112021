@@ -520,9 +520,9 @@ footer p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -ms-flex-line-pack: end;
       align-content: flex-end;
   -webkit-box-align: end;
@@ -542,25 +542,33 @@ footer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: white;
+  background: #99e2d0;
   color: #99e2d0;
-  border-radius: 50px;
+  background-color: white;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transform: scale(0.1);
+          transform: scale(0.1);
+}
+
+.check_animi.fas {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+@-webkit-keyframes tournicoti {
+  -webkit-transform: translateY(250%);
+          transform: translateY(250%);
+  background: #99e2d0;
   overflow: hidden;
 }
 
-.check_anim:hover {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  border: 2px solid green;
+@keyframes tournicoti {
+  -webkit-transform: translateY(250%);
+          transform: translateY(250%);
   background: #99e2d0;
-  margin-left: auto;
-  font-weight: 900;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  cursor: pointer;
-  margin-right: 50px;
+  overflow: hidden;
 }
 
 /*

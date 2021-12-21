@@ -1,6 +1,6 @@
 .check {
     display: flex;
-    justify-content: left;
+    justify-content: flex-end;
     align-content: flex-end;
     align-items: flex-end;
 }
@@ -10,20 +10,21 @@
     justify-content: center;
     align-content: flex-end;
     align-items: center;
-    background: white;
+    background: $tertiary;
     color: $tertiary; 
-    border-radius: 50px;
+    background-color: white;
+    border-radius: 50%;
     overflow: hidden;
-    &:hover { 
-                justify-content: flex-end;
-                border: 2px solid green;
-                background: $tertiary;
-                margin-left: auto;
-                font-weight: 900;
-                justify-content: center;
-                cursor: pointer;
-                margin-right: 50px ;  
+    cursor: pointer;
+    transform: scale(0.1);
+        &i.fas {
+            transform: translateY(0);
         }
+    & :hover {
+        @keyframes tournicoti {
+            transform: translateY(250%);
+            background: $tertiary;
+            overflow: hidden;  
+        }
+    }
 }
-
-                    

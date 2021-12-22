@@ -620,13 +620,17 @@ footer p {
   -webkit-transform-origin: 0%;
           transform-origin: 0%;
   cursor: pointer;
+  -webkit-transition-property: translate;
+  transition-property: translate;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+  -webkit-transform: all;
+          transform: all;
 }
 
 .check:hover {
   -webkit-transform: translateX(-50px);
           transform: translateX(-50px);
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
   cursor: pointer;
 }
 
@@ -643,25 +647,57 @@ footer p {
       -ms-flex-align: center;
           align-items: center;
   color: #99e2d0;
-  background-color: white;
+  background-color: #9356dc;
   border-radius: 50%;
   border: 2px solid white;
-  -webkit-transform-origin: 0%;
-          transform-origin: 0%;
+  -webkit-transform: translateX(1px);
+          transform: translateX(1px);
+  -webkit-transition-property: translate;
+  transition-property: translate;
   cursor: pointer;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+  -webkit-transform: all;
+          transform: all;
+  overflow: hidden;
 }
 
 .check_anim:hover {
-  -webkit-transform: translatex(-50px);
-          transform: translatex(-50px);
-  -webkit-animation-delay: calc(4s/5);
-          animation-delay: calc(4s/5);
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
   gap: 2rem;
+  -webkit-transition: -webkit-transform 330ms ease-in-out;
+  transition: -webkit-transform 330ms ease-in-out;
+  transition: transform 330ms ease-in-out;
+  transition: transform 330ms ease-in-out, -webkit-transform 330ms ease-in-out;
   cursor: pointer;
 }
 
+.check_anim:hover span {
+  display: inline-block;
+  -webkit-transform: translateY(250%);
+          transform: translateY(250%);
+  -webkit-transition: -webkit-transform 280ms ease-out 50ms;
+  transition: -webkit-transform 280ms ease-out 50ms;
+  transition: transform 280ms ease-out 50ms;
+  transition: transform 280ms ease-out 50ms, -webkit-transform 280ms ease-out 50ms;
+}
+
 .tournicoti {
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+  -webkit-transform: all;
+          transform: all;
+}
+
+.tournicoti:hover {
   @use tournicoti;
+  -webkit-transform: translate(-50px);
+          transform: translate(-50px);
 }
 
 /*

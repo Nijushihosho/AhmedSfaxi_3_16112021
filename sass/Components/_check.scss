@@ -6,9 +6,11 @@
     border: 2px solid red;
     transform-origin: 0%;
     cursor: pointer;
+    transition-property: translate;
+    transition-duration: 2s;
+    transform: all;
     &:hover {
         transform: translateX(-50px);
-        animation-delay: (4s/5);
         cursor: pointer;
     }
 }
@@ -19,19 +21,36 @@
     align-content: center;
     align-items: center;
     color: $tertiary; 
-    background-color: white;
+    background-color: $primary;
     border-radius: 50%;
     border: 2px solid white;
-    transform-origin: 0%;
+    transform: translateX(1px);
+    transition-property: translate;
     cursor: pointer;
+    transition-duration: 2s;
+    transform: all;
+    overflow: hidden;
     &:hover {
-        transform: translatex(-50px);
-        animation-delay: calc(4s/5);
+        transform: translateX(-50px);
         gap: 2rem;
+        transition: transform 330ms ease-in-out;
         cursor: pointer;
+        & span {
+            display: inline-block;
+transform: translateY(250%);
+transition: transform 280ms ease-out 50ms;
+        }
     }
 }
 
+
+
 .tournicoti {
+    transition-property: transform;
+    transition-duration: 2s;
+    transform: all;
+    &:hover {
  @use tournicoti;
+ transform: translate(-50px);
+    }
 }

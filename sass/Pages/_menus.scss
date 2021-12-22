@@ -20,7 +20,8 @@ position: relative;
 
 
 .titre_carte .far {
-    background-clip: border-box;
+@include heart-1;
+/*background-clip: border-box;
     -webkit-background-clip: text;
     opacity: 1;
     grid-area: 1/2;
@@ -32,8 +33,8 @@ position: relative;
         opacity: 1;
         grid-area: 1/2;
         transition: 0.3s ease-in-out;
-        cursor: pointer;
-        }
+        cursor: pointer; 
+        }*/
     }
 
 .titre_carte .fas {

@@ -44,11 +44,41 @@ transition: 0.2s ease-in-out;
 }
 
 
+@mixin heart-1{
+background-clip: border-box;
+-webkit-background-clip: text;
+opacity: 1;
+grid-area: 1/2;
+transition: 0.3s ease-in-out;
+    &:hover.far {
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+    grid-area: 1/2;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    }
+}
 
-
-
-
-
+@mixin heart2 {
+background-clip: border-box;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+opacity: 1;
+grid-area: 1/2;
+transition: 0.3s ease-in-out;
+    &:hover.fas {
+    opacity: 1;
+    grid-area: 1/2;
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-animation-fill-color: transparent;
+    transition: 0.3s ease-in-out;
+    background-image: linear-gradient($secondary,$primary);
+    cursor: pointer;
+    }
+}
 
 
 

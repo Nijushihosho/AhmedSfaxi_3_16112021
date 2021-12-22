@@ -1,0 +1,35 @@
+.description .far {
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  opacity: 1;
+  grid-area: 1/2;
+  transition: 0.3s ease-in-out;
+}
+.description .far:hover.far {
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+  grid-area: 1/2;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.description .fas {
+  /* background-clip: border-box;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   opacity: 1;
+   grid-area: 1/2;
+   transition: 0.3s ease-in-out;
+       &:hover.fas {
+       opacity: 1;
+       grid-area: 1/2;
+       background-clip: content-box;
+       -webkit-background-clip: text;
+       -webkit-animation-fill-color: transparent;
+       transition: 0.3s ease-in-out;
+       background-image: linear-gradient($secondary,$primary);
+       cursor: pointer;
+   }*/
+}

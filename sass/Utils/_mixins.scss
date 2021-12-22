@@ -17,7 +17,7 @@ transition: 0.2s ease-in-out;
     }
 }
 
-@mixin heart {
+/*@mixin heart {
     background-clip: border-box;
     -webkit-background-clip: text;
     opacity: 0;
@@ -41,7 +41,7 @@ transition: 0.2s ease-in-out;
             cursor: pointer;
         }
     }
-}
+}*/
 
 
 @mixin heart-1{
@@ -61,7 +61,7 @@ transition: 0.3s ease-in-out;
     }
 }
 
-@mixin heart2 {
+@mixin heart-2 {
 background-clip: border-box;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;

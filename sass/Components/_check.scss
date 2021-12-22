@@ -1,9 +1,16 @@
 .check {
     display: flex;
-    /*justify-content: flex-end;*/
-    /*align-content: flex-end;*/
+    justify-content: flex-end;
+    align-content: flex-end;
     align-items: flex-end;
     border: 2px solid red;
+    transform-origin: 0%;
+    cursor: pointer;
+    &:hover {
+        transform: translateX(-50px);
+        animation-delay: (4s/5);
+        cursor: pointer;
+    }
 }
 
 .check_anim   {
@@ -14,14 +21,17 @@
     color: $tertiary; 
     background-color: white;
     border-radius: 50%;
+    border: 2px solid white;
+    transform-origin: 0%;
     cursor: pointer;
-    border: 2px solid yellow;
-    animation: slideup 1s forwards;
-    &:hover i .fas {
-        transform: scale(0.1);
-        border: 2px solid violet;
+    &:hover {
+        transform: translatex(-50px);
         animation-delay: calc(4s/5);
         gap: 2rem;
+        cursor: pointer;
     }
 }
 
+.tournicoti {
+ @use tournicoti;
+}

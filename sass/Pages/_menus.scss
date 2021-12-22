@@ -38,7 +38,8 @@ position: relative;
     }
 
 .titre_carte .fas {
-        background-clip: border-box;
+    @include heart-2;
+        /*background-clip: border-box;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         opacity: 1;
@@ -53,7 +54,7 @@ position: relative;
             transition: 0.3s ease-in-out;
             background-image: linear-gradient($secondary,$primary);
             cursor: pointer;
-        }
+        }*/
     }
 
 
@@ -69,13 +70,11 @@ flex-basis: 100%;
 overflow: hidden;
     & .texte {
         border: 2px solid violet;
-        flex-basis: 50%;
         }
 }
 
-    .prix {
+    p.prix {
         border: 2px solid blue;
-        flex-basis: 50%;
         justify-content: flex-end;
         align-items: flex-end;
         font-weight: bold;

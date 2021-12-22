@@ -1,0 +1,17 @@
+.load {
+    width: $size*10;
+    height: $size*7.5;
+    display: flex;
+    justify-content: space-evenly;
+    &__bar {
+        background-color: $cd-bars;
+        height: 100%;
+        width: $size;
+        animation: bars $anim-dur;
+        @for $i from 1 through $num-bars {
+            &--#{$i} {
+                animation-delay: $anim-delay * $i;
+             }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.check {
+  display: flex;
+  /*justify-content: flex-end;*/
+  /*align-content: flex-end;*/
+  align-items: flex-end;
+  border: 2px solid red;
+}
+.check :hover {
+  animation: slideup 1s forwards;
+}
+
+.check_anim {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: white;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid yellow;
+}
+.check_anim:hover i .fas {
+  transform: scale(0.1);
+  border: 2px solid violet;
+  animation-delay: calc(4s/5);
+  gap: 2rem;
+}

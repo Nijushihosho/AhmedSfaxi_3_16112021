@@ -606,8 +606,9 @@ footer p {
 }
 
 .check {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   /*align-content: flex-end;*/
   -webkit-box-align: center;
       -ms-flex-align: center;

@@ -1,5 +1,5 @@
 .check {
-    display: grid;
+    display: flex;
     /*align-content: flex-end;*/
     align-items: center;
     border: 2px solid red;
@@ -10,10 +10,10 @@
     width: 40px;
     transition: margin-right 1s;
     transform: all 1s;
-             &:hover {
+        &:hover {
         margin-right: 0;
              }
-}
+    }
 
 
     i.fa-check {

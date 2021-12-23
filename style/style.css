@@ -81,7 +81,7 @@ footer {
           box-shadow: 5px 5px 10px -3px lightslategray;
 }
 
-.navbar {
+.navbar, .menus_description {
   -webkit-box-shadow: 0px 3px 3px lightgray;
           box-shadow: 0px 3px 3px lightgray;
 }
@@ -546,8 +546,6 @@ img {
   margin: 10px;
   background-color: white;
   /*border: 2px solid red;*/
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
   overflow: hidden;
 }
 
@@ -555,15 +553,18 @@ img {
   border: 2px solid violet;
 }
 
-p.prix {
+span.prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border: 2px solid blue;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  /*justify-content: flex-end;*/
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
   font-weight: bold;
+  margin-left: auto;
+  cursor: pointer;
 }
 
 .bottom_page {
@@ -605,101 +606,44 @@ footer p {
 }
 
 .check {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  border: 2px solid red;
-  -webkit-transform-origin: 0%;
-          transform-origin: 0%;
-  cursor: pointer;
-  -webkit-transition-property: translate;
-  transition-property: translate;
-  -webkit-transition-duration: 2s;
-          transition-duration: 2s;
-  -webkit-transform: all;
-          transform: all;
-}
-
-.check:hover {
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
-  cursor: pointer;
-}
-
-.check_anim {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  display: -ms-grid;
+  display: grid;
+  /*align-content: flex-end;*/
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 2px solid red;
+  cursor: pointer;
+  background-color: #99e2d0;
   color: #99e2d0;
-  background-color: #9356dc;
+  margin-right: -41px;
+  width: 40px;
+  -webkit-transition: margin-right 1s;
+  transition: margin-right 1s;
+  -webkit-transform: all 1s;
+          transform: all 1s;
+}
+
+.check:hover {
+  margin-right: 0;
+}
+
+i.fa-check {
+  background: white;
   border-radius: 50%;
-  border: 2px solid white;
-  -webkit-transform: translateX(1px);
-          transform: translateX(1px);
-  -webkit-transition-property: translate;
-  transition-property: translate;
-  cursor: pointer;
-  -webkit-transition-duration: 2s;
-          transition-duration: 2s;
-  -webkit-transform: all;
-          transform: all;
-  overflow: hidden;
+  aspect-ratio: 1;
+  color: inherit;
 }
 
-.check_anim:hover {
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
-  gap: 2rem;
-  -webkit-transition: -webkit-transform 330ms ease-in-out;
-  transition: -webkit-transform 330ms ease-in-out;
-  transition: transform 330ms ease-in-out;
-  transition: transform 330ms ease-in-out, -webkit-transform 330ms ease-in-out;
-  cursor: pointer;
-}
-
-.check_anim:hover span {
-  display: inline-block;
-  -webkit-transform: translateY(250%);
-          transform: translateY(250%);
-  -webkit-transition: -webkit-transform 280ms ease-out 50ms;
-  transition: -webkit-transform 280ms ease-out 50ms;
-  transition: transform 280ms ease-out 50ms;
-  transition: transform 280ms ease-out 50ms, -webkit-transform 280ms ease-out 50ms;
-}
-
-.tournicoti {
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 2s;
-          transition-duration: 2s;
-  -webkit-transform: all;
-          transform: all;
-}
-
-.tournicoti:hover {
-  @use tournicoti;
-  -webkit-transform: translate(-50px);
-          transform: translate(-50px);
-}
-
+/*.tournicoti {
+    transition-property: transform;
+    transition-duration: 2s;
+    transform: all;
+    &:hover {
+ @use tournicoti;
+ transform: translate(-50px);
+    }
+}*/
 /*
 Error: Inconsistent indentation: 1 space was used for indentation, but the rest of the document was indented using 2 spaces.
         on line 94 of ./style/style.css

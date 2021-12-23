@@ -1,51 +1,29 @@
 .check {
-    display: flex;
-    justify-content: flex-end;
-    align-content: flex-end;
-    align-items: flex-end;
-    border: 2px solid red;
-    transform-origin: 0%;
-    cursor: pointer;
-    transition-property: translate;
-    transition-duration: 2s;
-    transform: all;
-    &:hover {
-        transform: translateX(-50px);
-        cursor: pointer;
-    }
-}
-
-.check_anim   {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    display: grid;
+    /*align-content: flex-end;*/
     align-items: center;
-    color: $tertiary; 
-    background-color: $primary;
-    border-radius: 50%;
-    border: 2px solid white;
-    transform: translateX(1px);
-    transition-property: translate;
+    border: 2px solid red;
     cursor: pointer;
-    transition-duration: 2s;
-    transform: all;
-    overflow: hidden;
-    &:hover {
-        transform: translateX(-50px);
-        gap: 2rem;
-        transition: transform 330ms ease-in-out;
-        cursor: pointer;
-        & span {
-            display: inline-block;
-transform: translateY(250%);
-transition: transform 280ms ease-out 50ms;
-        }
-    }
+    background-color: $tertiary;
+    color: $tertiary;
+    margin-right: -41px;
+    width: 40px;
+    transition: margin-right 1s;
+    transform: all 1s;
+             &:hover {
+        margin-right: 0;
+             }
 }
 
 
+    i.fa-check {
+        background: white;
+        border-radius: 50%;
+        aspect-ratio: 1;
+        color: inherit;
+    }
 
-.tournicoti {
+/*.tournicoti {
     transition-property: transform;
     transition-duration: 2s;
     transform: all;
@@ -53,4 +31,4 @@ transition: transform 280ms ease-out 50ms;
  @use tournicoti;
  transform: translate(-50px);
     }
-}
+}*/

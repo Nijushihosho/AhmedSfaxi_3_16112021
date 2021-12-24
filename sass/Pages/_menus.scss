@@ -65,29 +65,14 @@ border: 1px solid gray;
 border-radius: 20px;
 margin: 10px;
 background-color: white;
-/*border: 2px solid red;*/
+border: 2px solid red;
 overflow: hidden;
 @extend %shadow;
 cursor: pointer;
-    &:hover + .check {
-    display: flex;
-    /*align-content: flex-end;*/
-    align-items: center;
-    border: 2px solid red;
-    cursor: pointer;
-    background-color: $tertiary;
-    color: $tertiary;
-    margin-right: -41px;
-    width: 40px;
-    transition: margin-right 1s;
-    transform: all 1s;
-        &:hover {
-        margin-right: 0;
-             }
-    }
-}
+        }
 
-    span.prix {
+
+    span.menus_prix {
         display: flex;
         border: 2px solid blue;
         /*justify-content: flex-end;*/
@@ -95,6 +80,7 @@ cursor: pointer;
         font-weight: bold;
         margin-left: auto;
         cursor: pointer;
+        color: black;
     }
 
 

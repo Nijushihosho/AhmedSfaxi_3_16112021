@@ -1,4 +1,18 @@
+nav.navbar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    & i.fas.fa-arrow-left {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	color: black;
+	}
+}
+
 .navbar {
+	display: flex;
+	justify-content: center;
 	@extend %shadow;
 	font-family: "Shrikhand", cursive;
 	text-align: center;

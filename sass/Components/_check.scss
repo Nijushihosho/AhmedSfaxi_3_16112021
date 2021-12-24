@@ -28,7 +28,7 @@
     transition-duration: 2s;
     transform: all;
     &:hover {
- @use tournicoti;
+ @include tournicoti;
  transform: translate(-50px);
     }
 }*/

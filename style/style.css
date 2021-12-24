@@ -94,7 +94,38 @@ main, .belleville, .fonctionnement li, .resto {
   background-color: lightgray;
 }
 
+nav.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav.navbar i.fas.fa-arrow-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+}
+
 .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: "Shrikhand", cursive;
   text-align: center;
   padding: 5px;
@@ -439,7 +470,7 @@ img {
 .titre_carte {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  margin: 25px;
+  margin: 0px 25px 25px 25px;
   position: relative;
   color: black;
 }
@@ -547,10 +578,31 @@ img {
   background-color: white;
   /*border: 2px solid red;*/
   overflow: hidden;
+  cursor: pointer;
 }
 
-.menus_description .texte {
-  border: 2px solid violet;
+.menus_description:hover + .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*align-content: flex-end;*/
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid red;
+  cursor: pointer;
+  background-color: #99e2d0;
+  color: #99e2d0;
+  margin-right: -41px;
+  width: 40px;
+  -webkit-transition: margin-right 1s;
+  transition: margin-right 1s;
+  -webkit-transform: all 1s;
+          transform: all 1s;
+}
+
+.menus_description:hover + .check:hover {
+  margin-right: 0;
 }
 
 span.prix {
@@ -641,7 +693,7 @@ i.fa-check {
     transition-duration: 2s;
     transform: all;
     &:hover {
- @use tournicoti;
+ @include tournicoti;
  transform: translate(-50px);
     }
 }*/

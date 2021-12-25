@@ -5,7 +5,6 @@ img {
 }
 
 .titre_carte {
-flex-basis: 100%;
 margin: 0px 25px 25px 25px;
 position: relative;
 	color: black;
@@ -58,30 +57,62 @@ position: relative;
     }
 
 
-.menus_description {
+.menus_global {
 display: flex;
-justify-content: space-between;
 border: 1px solid gray;
 border-radius: 20px;
 margin: 10px;
 background-color: white;
 border: 2px solid red;
 overflow: hidden;
+height: auto;
 @extend %shadow;
-cursor: pointer;
-        }
-
-
-    span.menus_prix {
+    .menus_details {
         display: flex;
-        border: 2px solid blue;
-        /*justify-content: flex-end;*/
-        align-items: flex-end;
-        font-weight: bold;
-        margin-left: auto;
-        cursor: pointer;
-        color: black;
+        border: 2px solid yellowgreen;
+        .menus_description {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            border: 2px solid black;
+            .menus_check {
+                display: flex;
+                align-items: center;
+                border: 2px solid black;
+                cursor: pointer;
+                background-color: $tertiary;
+                color: $tertiary;
+                margin-right: -41px;
+                width: 40px;
+                transition: margin-right 1s;
+                transform: all 1s;
+                &:hover {
+                    margin-right: 0;
+                }
+            }
+        }  
     }
+}
+
+span.menus_prix {
+            display: flex;
+            border: 2px solid blue;
+            align-items: flex-end;
+            font-weight: bold;
+            margin-left: auto;
+            color: black;
+}
+
+i.fas.fa-check {
+    color: $tertiary;
+    border-radius: 50%;
+    justify-content: center;
+    align-content: center;
+    background: white;
+    background-color: white;
+    align-items: center;
+}
+
 
 
 .bottom_page {

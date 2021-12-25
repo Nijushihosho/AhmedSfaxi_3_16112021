@@ -1,8 +1,7 @@
-.check {
+.menus_check {
     display: flex;
-    /*align-content: flex-end;*/
     align-items: center;
-    border: 2px solid red;
+    border: 2px solid black;
     cursor: pointer;
     background-color: $tertiary;
     color: $tertiary;
@@ -10,18 +9,10 @@
     width: 40px;
     transition: margin-right 1s;
     transform: all 1s;
-            &:hover {
-            margin-right: 0;
-             }
-        }
-
-        i.fas.fa-check {
-            background: white;
-            border-radius: 50%;
-            aspect-ratio: 1;
-            color: inherit;
-        }
-  
+    &:hover {
+        margin-right: 0;
+    }
+}
 /*.tournicoti {
     transition-property: transform;
     transition-duration: 2s;

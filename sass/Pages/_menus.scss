@@ -65,6 +65,8 @@ background-color: white;
 border: 2px solid red;
 height: auto;
 @extend %shadow;
+animation: apparition 3s;
+overflow: hidden;
 cursor: pointer;
     &.menus_details {
         display: flex;
@@ -92,7 +94,6 @@ cursor: pointer;
                 margin-right: -41px;
                 width: 40px;
                 transition: margin-right 1s;
-                transform: all 1s;
         &:hover {
                     margin-right: 0;
                 }

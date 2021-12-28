@@ -72,8 +72,12 @@ P {
 }
 
 footer {
-  padding: 0 14px 15px 0px;
+  padding: 0px 14px 15px 0px;
   background-color: black;
+}
+
+footer a {
+  gap: 10px;
 }
 
 .fonctionnement li {
@@ -94,6 +98,54 @@ main, .belleville, .fonctionnement li, .resto {
   background-color: lightgray;
 }
 
+@-webkit-keyframes tournicoti {
+  0% {
+    -webkit-transform: rotate(-270deg);
+            transform: rotate(-270deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes tournicoti {
+  0% {
+    -webkit-transform: rotate(-270deg);
+            transform: rotate(-270deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@-webkit-keyframes apparition {
+  0% {
+    -webkit-transform: translateY(-70%);
+            transform: translateY(-70%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes apparition {
+  0% {
+    -webkit-transform: translateY(-70%);
+            transform: translateY(-70%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 nav.navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,12 +162,13 @@ nav.navbar i.fas.fa-arrow-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: auto;
   color: black;
 }
 
@@ -162,7 +215,7 @@ nav.navbar i.fas.fa-arrow-left {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  background-color: #ffffff;
+  background-color: #ff79da;
   height: 100vh;
   inset: 0;
   z-index: 1;
@@ -447,11 +500,13 @@ nav.navbar i.fas.fa-arrow-left {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin: 25px;
+  background-size: auto;
 }
 
 .resto_vignette .description {
   position: relative;
   color: black;
+  /*min-height: 0; Fix Overflow iddues in css flex layouts*/
 }
 
 .resto_vignette .description h3,
@@ -466,8 +521,15 @@ nav.navbar i.fas.fa-arrow-left {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  /*min-height: 0; Fix Overflow iddues in css flex layouts*/
 }
 
+/*.vignette_image{
+display: flex;
+width: 100%;
+height: auto;
+object-fit: cover;
+}*/
 .resto img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -477,11 +539,13 @@ nav.navbar i.fas.fa-arrow-left {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 30px 30px 0px 0px;
+  /*min-height: 0; Fix Overflow iddues in css flex layouts*/
 }
 
 /*vignette vertes nouveau */
 .nouveau {
   position: relative;
+  /*min-height: 0; Fix Overflow iddues in css flex layouts*/
 }
 
 .nouveau::before {
@@ -496,6 +560,7 @@ nav.navbar i.fas.fa-arrow-left {
   place-items: center;
   right: 1rem;
   top: 1rem;
+  /*min-height: 0; Fix Overflow iddues in css flex layouts*/
 }
 
 img {
@@ -611,6 +676,9 @@ img {
   background-color: white;
   border: 2px solid red;
   height: auto;
+  -webkit-animation: apparition 3s;
+          animation: apparition 3s;
+  overflow: hidden;
   cursor: pointer;
 }
 
@@ -655,8 +723,6 @@ img {
   width: 40px;
   -webkit-transition: margin-right 1s;
   transition: margin-right 1s;
-  -webkit-transform: all 1s;
-          transform: all 1s;
 }
 
 .menus_conteneur_global.menus_details .menus_check:hover {

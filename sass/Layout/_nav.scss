@@ -2,10 +2,11 @@ nav.navbar {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    & i.fas.fa-arrow-left {
+    i.fas.fa-arrow-left {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
+	margin-right: auto;
 	color: black;
 	}
 }

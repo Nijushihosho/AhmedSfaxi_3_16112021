@@ -56,7 +56,6 @@ position: relative;
         }*/
     }
 
-
 .menus_global {
 display: flex;
 border: 1px solid gray;
@@ -64,35 +63,39 @@ border-radius: 20px;
 margin: 10px;
 background-color: white;
 border: 2px solid red;
-overflow: hidden;
 height: auto;
 @extend %shadow;
-    .menus_details {
+cursor: pointer;
+        .menus_details {
         display: flex;
         border: 2px solid yellowgreen;
+        overflow: hidden;
         .menus_description {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             border: 2px solid black;
-            .menus_check {
+            overflow: hidden;
+        .menus_check {
                 display: flex;
+                justify-content: center;
                 align-items: center;
                 border: 2px solid black;
-                cursor: pointer;
+                border-radius: 10px;
                 background-color: $tertiary;
                 color: $tertiary;
                 margin-right: -41px;
                 width: 40px;
                 transition: margin-right 1s;
                 transform: all 1s;
-                &:hover {
+            }
+        &:hover  {
                     margin-right: 0;
                 }
             }
         }  
     }
-}
+
 
 span.menus_prix {
             display: flex;
@@ -112,8 +115,6 @@ i.fas.fa-check {
     background-color: white;
     align-items: center;
 }
-
-
 
 .bottom_page {
     display: flex;

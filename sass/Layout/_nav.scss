@@ -1,22 +1,9 @@
-nav.navbar {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    i.fas.fa-arrow-left {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-right: auto;
-	color: black;
-	}
-}
-
 .navbar {
 	display: flex;
 	justify-content: center;
 	@extend %shadow;
 	font-family: "Shrikhand", cursive;
-	text-align: center;
+	align-items: center;
 	padding: 5px;
 	overflow: hidden;
 	background-color: white;
@@ -26,11 +13,12 @@ nav.navbar {
 	.navbar a {
 		display: flex;
 		color: black;
-		justify-content: center;
+		justify-content: flex-start;
 		align-items: center;
 		padding: 14px 16px;
 		text-decoration: none;
 		font-size: 15px;
+		width: 100%;
 		.navbar a:hover {
 			background: white;
 			color: black;			

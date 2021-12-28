@@ -46,6 +46,10 @@ main {
   padding: 200px 0px;
 }
 
+h1 {
+  margin: 0 auto;
+}
+
 h2 {
   padding: 0 14px;
   margin: 15px;
@@ -146,32 +150,6 @@ main, .belleville, .fonctionnement li, .resto {
   }
 }
 
-nav.navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-nav.navbar i.fas.fa-arrow-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: auto;
-  color: black;
-}
-
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -180,7 +158,9 @@ nav.navbar i.fas.fa-arrow-left {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: "Shrikhand", cursive;
-  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 5px;
   overflow: hidden;
   background-color: white;
@@ -194,15 +174,16 @@ nav.navbar i.fas.fa-arrow-left {
   display: -ms-flexbox;
   display: flex;
   color: black;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 15px;
+  width: 100%;
 }
 
 .navbar .navbar a .navbar a:hover {

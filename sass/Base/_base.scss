@@ -10,7 +10,7 @@ header {
     margin: 0;
     font-family: "Shrikhand", "cursive";
     font-size: 2.5rem;
-}
+    }
 
 body {
     margin: 0;
@@ -20,6 +20,10 @@ body {
 main {
     padding: 200px 0px;
     @extend %fondgris;
+}
+
+h1 {
+    margin: 0 auto;
 }
 
 h2 {

@@ -81,7 +81,7 @@ footer {
           box-shadow: 5px 5px 10px -3px lightslategray;
 }
 
-.navbar, .menus_global {
+.navbar, .menus_conteneur_global {
   -webkit-box-shadow: 0px 3px 3px lightgray;
           box-shadow: 0px 3px 3px lightgray;
 }
@@ -563,7 +563,7 @@ img {
   cursor: pointer;
 }
 
-.menus_global {
+.menus_conteneur_global {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -574,17 +574,13 @@ img {
   border: 2px solid red;
   height: auto;
   cursor: pointer;
+  /*.menus_details {
+        display: flex;
+        border: 2px solid yellowgreen;
+        overflow: hidden;*/
 }
 
-.menus_global .menus_details {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: 2px solid yellowgreen;
-  overflow: hidden;
-}
-
-.menus_global .menus_details .menus_description {
+.menus_conteneur_global .menus_description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -594,11 +590,11 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid black;
+  border: 2px solid violet;
   overflow: hidden;
 }
 
-.menus_global .menus_details .menus_description .menus_check {
+.menus_conteneur_global .menus_description .menus_check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -620,7 +616,7 @@ img {
           transform: all 1s;
 }
 
-.menus_global .menus_details .menus_description:hover {
+.menus_conteneur_global .menus_description:hover .menus_conteneur_global .menus_description .menus_global {
   margin-right: 0;
 }
 

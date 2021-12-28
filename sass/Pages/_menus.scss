@@ -56,7 +56,7 @@ position: relative;
         }*/
     }
 
-.menus_global {
+.menus_conteneur_global {
 display: flex;
 border: 1px solid gray;
 border-radius: 20px;
@@ -74,8 +74,9 @@ cursor: pointer;
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            border: 2px solid black;
+            border: 2px solid violet;
             overflow: hidden;
+            height: auto;
         .menus_check {
                 display: flex;
                 justify-content: center;
@@ -89,12 +90,12 @@ cursor: pointer;
                 transition: margin-right 1s;
                 transform: all 1s;
             }
-        &:hover  {
+        &:hover & .menus_global {
                     margin-right: 0;
                 }
             }
         }  
-    }
+
 
 
 span.menus_prix {

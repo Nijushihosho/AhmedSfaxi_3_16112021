@@ -574,13 +574,9 @@ img {
   border: 2px solid red;
   height: auto;
   cursor: pointer;
-  /*.menus_details {
-        display: flex;
-        border: 2px solid yellowgreen;
-        overflow: hidden;*/
 }
 
-.menus_conteneur_global .menus_description {
+.menus_conteneur_global.menus_details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -590,11 +586,20 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid violet;
+  border: 2px solid yellowgreen;
   overflow: hidden;
+  height: auto;
+  cursor: pointer;
+  /*.menus_description {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            border: 2px solid violet;
+            overflow: hidden;
+            height: auto;*/
 }
 
-.menus_conteneur_global .menus_description .menus_check {
+.menus_conteneur_global.menus_details .menus_check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -616,7 +621,7 @@ img {
           transform: all 1s;
 }
 
-.menus_conteneur_global .menus_description:hover .menus_conteneur_global .menus_description .menus_global {
+.menus_conteneur_global.menus_details .menus_check:hover {
   margin-right: 0;
 }
 
@@ -639,8 +644,6 @@ i.fas.fa-check {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
   background: white;
   background-color: white;
   -webkit-box-align: center;
@@ -655,8 +658,9 @@ i.fas.fa-check {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .bottom_page .button {

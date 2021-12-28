@@ -66,17 +66,21 @@ border: 2px solid red;
 height: auto;
 @extend %shadow;
 cursor: pointer;
-        .menus_details {
+    &.menus_details {
         display: flex;
+        justify-content: flex-start;
+        align-items: center;
         border: 2px solid yellowgreen;
         overflow: hidden;
-        .menus_description {
+        height: auto;
+        cursor: pointer;
+        /*.menus_description {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             border: 2px solid violet;
             overflow: hidden;
-            height: auto;
+            height: auto;*/
         .menus_check {
                 display: flex;
                 justify-content: center;
@@ -89,14 +93,12 @@ cursor: pointer;
                 width: 40px;
                 transition: margin-right 1s;
                 transform: all 1s;
-            }
-        &:hover & .menus_global {
+        &:hover {
                     margin-right: 0;
                 }
             }
-        }  
-
-
+        }
+    }
 
 span.menus_prix {
             display: flex;
@@ -111,7 +113,6 @@ i.fas.fa-check {
     color: $tertiary;
     border-radius: 50%;
     justify-content: center;
-    align-content: center;
     background: white;
     background-color: white;
     align-items: center;
@@ -120,7 +121,7 @@ i.fas.fa-check {
 .bottom_page {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     & .button {
     align-items: center;
     margin: 15px;

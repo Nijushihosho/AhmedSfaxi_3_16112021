@@ -215,7 +215,7 @@ main, .belleville, .fonctionnement li, .resto {
   height: 100vh;
   inset: 0;
   z-index: 1;
-  opacity: 0.9;
+  opacity: 0.3;
   -webkit-animation: disparition 3s;
           animation: disparition 3s;
   -webkit-animation-fill-mode: forwards;

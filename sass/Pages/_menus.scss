@@ -68,6 +68,11 @@ height: auto;
 animation: apparition 3s;
 overflow: hidden;
 cursor: pointer;
+    &:hover {
+        & .menus_check {
+        margin-right: 0;
+        }
+}
     &.menus_details {
         display: flex;
         justify-content: flex-start;
@@ -94,9 +99,10 @@ cursor: pointer;
                 margin-right: -41px;
                 width: 40px;
                 transition: margin-right 1s;
-        &:hover {
+                animation: tournicoti 2s;
+        /*&:hover {
                     margin-right: 0;
-                }
+                }*/
             }
         }
     }

@@ -155,6 +155,28 @@ main, .belleville, .fonctionnement li, .resto {
   }
 }
 
+@-webkit-keyframes disparition {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes disparition {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -172,6 +194,7 @@ main, .belleville, .fonctionnement li, .resto {
   position: fixed;
   top: 0px;
   width: 100%;
+  z-index: 1;
 }
 
 .navbar .navbar a {
@@ -220,28 +243,6 @@ main, .belleville, .fonctionnement li, .resto {
           animation: disparition 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes disparition {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-}
-
-@keyframes disparition {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
 }
 
 .load {
@@ -496,7 +497,6 @@ main, .belleville, .fonctionnement li, .resto {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin: 25px;
-  background-size: auto;
 }
 
 .resto_vignette .description {
@@ -678,6 +678,10 @@ img {
   cursor: pointer;
 }
 
+.menus_conteneur_global:hover .menus_check {
+  margin-right: 0;
+}
+
 .menus_conteneur_global.menus_details {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -719,10 +723,11 @@ img {
   width: 40px;
   -webkit-transition: margin-right 1s;
   transition: margin-right 1s;
-}
-
-.menus_conteneur_global.menus_details .menus_check:hover {
-  margin-right: 0;
+  -webkit-animation: tournicoti 2s;
+          animation: tournicoti 2s;
+  /*&:hover {
+                    margin-right: 0;
+                }*/
 }
 
 span.menus_prix {

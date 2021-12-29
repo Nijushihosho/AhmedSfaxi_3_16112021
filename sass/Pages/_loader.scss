@@ -12,15 +12,6 @@
     animation-fill-mode: forwards;
 }
 
-@keyframes disparition {
-    0% {
-        transform:scale(1);
-    }
-    100% {
-        transform: scale(0);
-    }
-}
-
 .load {
     width: $size*10;
     height: $size*7.5;

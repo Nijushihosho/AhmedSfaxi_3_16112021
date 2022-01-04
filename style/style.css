@@ -520,12 +520,16 @@ main, .belleville, .fonctionnement li, .resto {
   /*min-height: 0; Fix Overflow iddues in css flex layouts*/
 }
 
-/*.vignette_image{
-display: flex;
-width: 100%;
-height: auto;
-object-fit: cover;
-}*/
+.vignette_image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .resto img {
   display: -webkit-box;
   display: -ms-flexbox;

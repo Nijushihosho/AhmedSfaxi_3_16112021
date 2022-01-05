@@ -3,7 +3,7 @@
 	flex-basis: 100%;
 	flex-flow: column wrap;
 	@extend %fondgris;
-	height: auto;
+	/*height: auto;*/
 	margin-top: 50px;
 }
 
@@ -25,18 +25,18 @@
 			position: absolute;
 			right: 15px;
 			top: 50%;
-			transform: translateY(-50%) ;
-			/*min-height: 0; Fix Overflow iddues in css flex layouts*/
+			transform: translateY(-50%);
 		}
 	}
 }
 
-/*.vignette_image{
+.vignette_image {
 display: flex;
 width: 100%;
 height: auto;
 object-fit: cover;
-}*/
+padding: 0px;
+}
 
 .resto img {
 		display: flex;
@@ -44,13 +44,11 @@ object-fit: cover;
 		height: 12rem;
 		object-fit: cover;
 		border-radius: 30px 30px 0px 0px;
-		/*min-height: 0; Fix Overflow iddues in css flex layouts*/ 
 	}	
 
 	/*vignette vertes nouveau */
 .nouveau {
-	position: relative;
-	/*min-height: 0; Fix Overflow iddues in css flex layouts*/ 
+	position: relative; 
 }
 
 .nouveau::before {
@@ -64,5 +62,4 @@ object-fit: cover;
 	place-items: center;
 	right: 1rem;
 	top: 1rem;
-	/*min-height: 0; Fix Overflow iddues in css flex layouts*/
 }

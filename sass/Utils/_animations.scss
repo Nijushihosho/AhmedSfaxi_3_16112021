@@ -1,8 +1,8 @@
 @keyframes tournicoti {
-    0% {
+    from {
         transform: rotate(-270deg);
     }
-    100% {
+    to {
         transform: rotate(0);
     }
 }

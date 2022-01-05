@@ -71,6 +71,9 @@ cursor: pointer;
         & .menus_check {
         margin-right: 0;
         }
+    i {
+        animation: tournicoti 1000ms ease-in-out;
+    }
 }
     &.menus_details {
         display: flex;
@@ -121,12 +124,15 @@ i.fas.fa-check {
     margin: 0 auto;
     aspect-ratio: 1;
     border-radius: 50px;
-        & .tournicoti {
-        transform: rotate(-270deg);
+    transform: all;
+        &:active {
+            & > .tournicoti {
+        transition-property: transform;
         animation-name: tournicoti;
         animation-duration: 1000ms;
         }
     }
+}
 
 .bottom_page {
     display: flex;

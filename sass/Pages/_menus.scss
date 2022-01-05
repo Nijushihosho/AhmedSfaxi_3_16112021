@@ -100,9 +100,6 @@ cursor: pointer;
                 width: 40px;
                 transition: margin-right 1s;
                 animation: tournicoti 2s;
-        /*&:hover {
-                    margin-right: 0;
-                }*/
             }
         }
     }
@@ -117,12 +114,15 @@ span.menus_prix {
 }
 
 i.fas.fa-check {
+    display: grid;
+    place-items: center;
     color: $tertiary;
-    border-radius: 50%;
-    justify-content: center;
     background: white;
     background-color: white;
-    align-items: center;
+    width: 25px;
+    margin: 0 auto;
+    aspect-ratio: 1;
+    border-radius: 50px;
 }
 
 .bottom_page {

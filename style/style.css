@@ -725,9 +725,6 @@ img {
   transition: margin-right 1s;
   -webkit-animation: tournicoti 2s;
           animation: tournicoti 2s;
-  /*&:hover {
-                    margin-right: 0;
-                }*/
 }
 
 span.menus_prix {
@@ -744,16 +741,16 @@ span.menus_prix {
 }
 
 i.fas.fa-check {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
   color: #99e2d0;
-  border-radius: 50%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background: white;
   background-color: white;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 25px;
+  margin: 0 auto;
+  aspect-ratio: 1;
+  border-radius: 50px;
 }
 
 .bottom_page {

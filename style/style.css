@@ -568,9 +568,12 @@ img {
 }
 
 .titre_carte {
-  margin: 0px 25px 25px 25px;
   position: relative;
+  border: 2px solid palevioletred;
+  border-radius: 20px 20px 0px 0px;
+  margin-top: -14px;
   color: black;
+  background-color: #f2f2f2;
 }
 
 .titre_carte i {
@@ -767,6 +770,10 @@ i.fas.fa-check:active > .tournicoti {
           animation-name: tournicoti;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
+}
+
+main.menus_restos {
+  margin-top: -105px;
 }
 
 .bottom_page {

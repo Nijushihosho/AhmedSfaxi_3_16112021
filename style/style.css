@@ -670,7 +670,6 @@ img {
   border-radius: 20px;
   margin: 10px;
   background-color: white;
-  border: 2px solid red;
   height: auto;
   -webkit-animation: apparition 3s;
           animation: apparition 3s;
@@ -723,15 +722,13 @@ img {
   width: 40px;
   -webkit-transition: margin-right 1s;
   transition: margin-right 1s;
-  -webkit-animation: tournicoti 2s;
-          animation: tournicoti 2s;
 }
 
 span.menus_prix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 2px solid blue;
+  /*border: 2px solid blue;*/
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -751,6 +748,15 @@ i.fas.fa-check {
   margin: 0 auto;
   aspect-ratio: 1;
   border-radius: 50px;
+}
+
+i.fas.fa-check .tournicoti {
+  -webkit-transform: rotate(-270deg);
+          transform: rotate(-270deg);
+  -webkit-animation-name: tournicoti;
+          animation-name: tournicoti;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
 }
 
 .bottom_page {
@@ -815,15 +821,22 @@ footer p {
   margin-right: 0;
 }
 
-/*.tournicoti {
-    transition-property: transform;
-    transition-duration: 2s;
-    transform: all;
-    &:hover {
- @include tournicoti;
- transform: translate(-50px);
-    }
-}*/
+.tournicoti {
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+  -webkit-transform: all;
+          transform: all;
+}
+
+.tournicoti:hover {
+  -webkit-transform: translate(-50px);
+          transform: translate(-50px);
+}
+
 /*
 Error: Inconsistent indentation: 1 space was used for indentation, but the rest of the document was indented using 2 spaces.
         on line 94 of ./style/style.css

@@ -13,12 +13,11 @@
         margin-right: 0;
     }
 }
-/*.tournicoti {
+.tournicoti {
     transition-property: transform;
     transition-duration: 2s;
     transform: all;
     &:hover {
- @include tournicoti;
  transform: translate(-50px);
     }
-}*/
+}

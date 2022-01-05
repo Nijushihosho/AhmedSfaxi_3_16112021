@@ -62,7 +62,6 @@ border: 1px solid gray;
 border-radius: 20px;
 margin: 10px;
 background-color: white;
-border: 2px solid red;
 height: auto;
 @extend %shadow;
 animation: apparition 3s;
@@ -99,14 +98,13 @@ cursor: pointer;
                 margin-right: -41px;
                 width: 40px;
                 transition: margin-right 1s;
-                animation: tournicoti 2s;
             }
         }
     }
 
 span.menus_prix {
             display: flex;
-            border: 2px solid blue;
+            /*border: 2px solid blue;*/
             align-items: flex-end;
             font-weight: bold;
             margin-left: auto;
@@ -123,7 +121,12 @@ i.fas.fa-check {
     margin: 0 auto;
     aspect-ratio: 1;
     border-radius: 50px;
-}
+        & .tournicoti {
+        transform: rotate(-270deg);
+        animation-name: tournicoti;
+        animation-duration: 1000ms;
+        }
+    }
 
 .bottom_page {
     display: flex;

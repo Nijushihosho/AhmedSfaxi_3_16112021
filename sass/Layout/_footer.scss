@@ -2,12 +2,22 @@ footer {
 	display: flex;
 	flex-flow: column wrap;
 	text-decoration: none;
-		& a {
-			color: white;
-		}
+	color: white;
+	background-color: black;
 }
 
-footer p {
+footer h2 {
+	display: flex;
+	justify-content: flex-start;
 	font-family: "Shrikhand", cursive;
-	color: white;
+	font-weight: 500;
+	margin-left: 5px;
+}
+
+footer i {
+	margin-right: 10px;
+}
+
+footer a {
+	margin-left: 0px;
 }

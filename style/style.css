@@ -80,15 +80,6 @@ P {
   margin: 10px;
 }
 
-footer {
-  padding: 0px 14px 15px 0px;
-  background-color: black;
-}
-
-footer a {
-  gap: 10px;
-}
-
 .fonctionnement li {
   -webkit-box-shadow: 5px 5px 10px -3px lightslategray;
           box-shadow: 5px 5px 10px -3px lightslategray;
@@ -735,6 +726,7 @@ span.menus_prix {
   font-weight: bold;
   margin-left: auto;
   color: black;
+  margin-right: 15px;
 }
 
 i.fas.fa-check {
@@ -795,15 +787,28 @@ footer {
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
   text-decoration: none;
+  color: white;
+  background-color: black;
+}
+
+footer h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-family: "Shrikhand", cursive;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+footer i {
+  margin-right: 10px;
 }
 
 footer a {
-  color: white;
-}
-
-footer p {
-  font-family: "Shrikhand", cursive;
-  color: white;
+  margin-left: 0px;
 }
 
 .menus_check {
@@ -813,12 +818,12 @@ footer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid black;
+  /*border: 2px solid black;*/
   cursor: pointer;
   background-color: #99e2d0;
   color: #99e2d0;
-  margin-right: -41px;
-  width: 40px;
+  margin-right: -62px;
+  width: 60px;
   -webkit-transition: margin-right 1s;
   transition: margin-right 1s;
   -webkit-transform: all 1s;

@@ -1,24 +1,24 @@
 .menus_check {
     display: flex;
     align-items: center;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     cursor: pointer;
     background-color: $tertiary;
     color: $tertiary;
-    margin-right: -41px;
-    width: 40px;
+    margin-right: -62px;
+    width: 60px;
     transition: margin-right 1s;
     transform: all 1s;
     &:hover {
         margin-right: 0;
     }
 }
+
 /*.tournicoti {
     transition-property: transform;
     transition-duration: 2s;
     transform: all;
     &:hover {
- @include tournicoti;
  transform: translate(-50px);
     }
 }*/

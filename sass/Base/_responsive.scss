@@ -1,0 +1,30 @@
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/*responvise vignettes desktop breakpoint 1440px*/
+/*.section.resto {
+    @media screen {
+        
+    }
+}*/
+
+/*.responsive {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}*/
+
+
+@media only screen and (min-width: 810px){
+    .resto {
+        border: solid 2px violet;
+        display: flex;
+        flex-flow: row nowrap;
+        height: auto;
+        max-width: 12rem;
+        }
+}

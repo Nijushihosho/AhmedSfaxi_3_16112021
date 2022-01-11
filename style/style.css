@@ -674,7 +674,6 @@ img {
   border-radius: 20px;
   margin: 10px;
   background-color: white;
-  border: 2px solid red;
   height: auto;
   -webkit-animation: apparition 3s;
           animation: apparition 3s;
@@ -684,6 +683,11 @@ img {
 
 .menus_conteneur_global:hover .menus_check {
   margin-right: 0;
+}
+
+.menus_conteneur_global:hover i {
+  -webkit-animation: tournicoti 1000ms ease-in-out;
+          animation: tournicoti 1000ms ease-in-out;
 }
 
 .menus_conteneur_global.menus_details {
@@ -727,37 +731,50 @@ img {
   width: 40px;
   -webkit-transition: margin-right 1s;
   transition: margin-right 1s;
-  -webkit-animation: tournicoti 2s;
-          animation: tournicoti 2s;
-  /*&:hover {
-                    margin-right: 0;
-                }*/
 }
 
 span.menus_prix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 2px solid blue;
+  /*border: 2px solid blue;*/
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
   font-weight: bold;
   margin-left: auto;
   color: black;
+  margin-right: 15px;
 }
 
 i.fas.fa-check {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
   color: #99e2d0;
-  border-radius: 50%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background: white;
   background-color: white;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 25px;
+  margin: 0 auto;
+  aspect-ratio: 1;
+  border-radius: 50px;
+  -webkit-transform: all;
+          transform: all;
+}
+
+i.fas.fa-check:active > .tournicoti {
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-animation-name: tournicoti;
+          animation-name: tournicoti;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+}
+
+main.menus_restos {
+  margin-top: -105px;
 }
 
 .bottom_page {
@@ -788,15 +805,28 @@ footer {
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
   text-decoration: none;
+  color: white;
+  background-color: black;
+}
+
+footer h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-family: "Shrikhand", cursive;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+footer i {
+  margin-right: 10px;
 }
 
 footer a {
-  color: white;
-}
-
-footer p {
-  font-family: "Shrikhand", cursive;
-  color: white;
+  margin-left: 0px;
 }
 
 .menus_check {
@@ -806,12 +836,12 @@ footer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid black;
+  /*border: 2px solid black;*/
   cursor: pointer;
   background-color: #99e2d0;
   color: #99e2d0;
-  margin-right: -41px;
-  width: 40px;
+  margin-right: -62px;
+  width: 60px;
   -webkit-transition: margin-right 1s;
   transition: margin-right 1s;
   -webkit-transform: all 1s;
@@ -827,7 +857,6 @@ footer p {
     transition-duration: 2s;
     transform: all;
     &:hover {
- @include tournicoti;
  transform: translate(-50px);
     }
 }*/

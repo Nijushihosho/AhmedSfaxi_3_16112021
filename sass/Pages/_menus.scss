@@ -1,13 +1,16 @@
-img {
+/*img {
     max-width: 100%;
     height: auto;
     object-fit: cover;
-}
+}*/
 
 .titre_carte {
-margin: 0px 25px 25px 25px;
 position: relative;
+border: 2px solid palevioletred;
+border-radius: 20px 20px 0px 0px;
+margin-top: -14px;
 	color: black;
+    background-color: #f2f2f2;
 	 i {
 		font-size: 33px;
 		position: absolute;
@@ -62,7 +65,6 @@ border: 1px solid gray;
 border-radius: 20px;
 margin: 10px;
 background-color: white;
-border: 2px solid red;
 height: auto;
 @extend %shadow;
 animation: apparition 3s;
@@ -72,6 +74,9 @@ cursor: pointer;
         & .menus_check {
         margin-right: 0;
         }
+    i {
+        animation: tournicoti 1000ms ease-in-out;
+    }
 }
     &.menus_details {
         display: flex;
@@ -99,30 +104,42 @@ cursor: pointer;
                 margin-right: -41px;
                 width: 40px;
                 transition: margin-right 1s;
-                animation: tournicoti 2s;
-        /*&:hover {
-                    margin-right: 0;
-                }*/
             }
         }
     }
 
 span.menus_prix {
             display: flex;
-            border: 2px solid blue;
+            /*border: 2px solid blue;*/
             align-items: flex-end;
             font-weight: bold;
             margin-left: auto;
             color: black;
+            margin-right: 15px;
 }
 
 i.fas.fa-check {
+    display: grid;
+    place-items: center;
     color: $tertiary;
-    border-radius: 50%;
-    justify-content: center;
     background: white;
     background-color: white;
-    align-items: center;
+    width: 25px;
+    margin: 0 auto;
+    aspect-ratio: 1;
+    border-radius: 50px;
+    transform: all;
+        &:active {
+            & > .tournicoti {
+        transition-property: transform;
+        animation-name: tournicoti;
+        animation-duration: 1000ms;
+        }
+    }
+}
+
+main.menus_restos {
+    margin-top: -105px;
 }
 
 .bottom_page {

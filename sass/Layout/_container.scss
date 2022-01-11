@@ -13,10 +13,10 @@
 	background-color: white;
 	flex-basis: 100%;
 	margin: 25px;
+	height: auto;
 		& .description {	
 		position: relative;
 		color: black;
-		/*min-height: 0; Fix Overflow iddues in css flex layouts*/
 		h3,
 		p {
 			 margin: 10px;
@@ -31,13 +31,8 @@
 	}
 }
 
-/*.vignette_image {
-max-width: 100%;
-height: auto;
-object-fit: cover;
-}*/
-
 .resto img {
+	display: flex;
 		height: auto;
 		width: 100%;
 		object-fit: cover;

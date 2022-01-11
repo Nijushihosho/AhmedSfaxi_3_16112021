@@ -490,12 +490,12 @@ main, .belleville, .fonctionnement li, .resto {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin: 25px;
+  height: auto;
 }
 
 .resto_vignette .description {
   position: relative;
   color: black;
-  /*min-height: 0; Fix Overflow iddues in css flex layouts*/
 }
 
 .resto_vignette .description h3,
@@ -512,12 +512,10 @@ main, .belleville, .fonctionnement li, .resto {
           transform: translateY(-50%);
 }
 
-/*.vignette_image {
-max-width: 100%;
-height: auto;
-object-fit: cover;
-}*/
 .resto img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: auto;
   width: 100%;
   -o-object-fit: cover;
@@ -834,32 +832,7 @@ footer a {
   margin-right: 0;
 }
 
-/*.tournicoti {
-    transition-property: transform;
-    transition-duration: 2s;
-    transform: all;
-    &:hover {
- transform: translate(-50px);
-    }
-}*/
-img {
-  width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-/*responvise vignettes desktop breakpoint 1440px*/
-/*.section.resto {
-    @media screen {
-        
-    }
-}*/
-/*.responsive {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-}*/
+/* mediaqueries desktop*/
 @media only screen and (min-width: 1440px) {
   .resto {
     border: solid 2px violet;
@@ -886,10 +859,39 @@ img {
     width: 100%;
     max-width: 100%;
     border: solid 2px blue;
+    -o-object-fit: fill;
+       object-fit: fill;
+    background-size: cover;
   }
-  .resto #resto_groupe img {
-    width: 100%;
-    height: 245px;
+  .resto #resto_groupe img.responsive {
+    min-width: 300px;
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+/* mediaqueries smartphone*/
+@media only screen and (min-width: 375px) {
+  img.responsive {
+    min-width: 315px;
+    max-width: 100%;
+    height: auto;
+    max-height: 210px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+/* mediaqueries tablette*/
+@media only screen and (min-width: 810px) {
+  img.responsive {
+    min-width: 750px;
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
     -o-object-fit: cover;
        object-fit: cover;
   }

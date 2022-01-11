@@ -2,7 +2,7 @@
 
 /* mediaqueries desktop*/
 
-@media only screen and (min-width: 1440px){
+@media only screen and (min-width: 1088px){
     .resto {
         border: solid 2px violet;
         display: flex;
@@ -12,45 +12,67 @@
         max-width: 100%;
         #resto_groupe {
             display: flex;
+            flex: 25%;
             flex-flow: row nowrap;
             height: auto;
             width: 100%;
-            max-width: 100%;
             border: solid 2px blue;
-            object-fit: fill;
-            background-size: cover;
-                img.responsive{
-                    min-width: 300px;
-                    max-width: 100%;
+                .resto.img {
+                    width: 100%;
                     height: auto;
-                    max-height: 200px;
                     object-fit: cover;
                 }
         }
     }
 }
-/* mediaqueries smartphone*/
 
 
-@media only screen and (min-width: 375px){
-        img.responsive{
-            min-width: 315px;
-            max-width: 100%;
-            height: auto;
-            max-height: 210px;
-            object-fit: cover;
-    }
-}
+/* mediaqueries desktop*/
 
-/* mediaqueries tablette*/
 
-@media only screen and (min-width: 810px){
+@media only screen and (min-width: 1088px){
     img.responsive{
-        min-width: 750px;
-        max-width: 100%;
-        height: auto;
-        max-height: 500px;
+        width: 50% content-box;
+        height: 50%;
         object-fit: cover;
 }
 }
 
+
+
+/* mediaqueries tablette*/
+
+@media only screen and (max-width: 810px){
+    img.responsive{
+        width: 100%;
+        height: 100%;
+}
+}
+
+/* mediaqueries smartphone*/
+
+
+@media only screen and (max-width: 375px){
+    img.responsive {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
+}
+
+
+@media only screen and (max-width: 810px){
+    .vignette_image.nouveau {
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 810px){
+    a.vignette {
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+    }
+}

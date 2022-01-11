@@ -842,6 +842,59 @@ footer a {
  transform: translate(-50px);
     }
 }*/
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*responvise vignettes desktop breakpoint 1440px*/
+/*.section.resto {
+    @media screen {
+        
+    }
+}*/
+/*.responsive {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}*/
+@media only screen and (min-width: 810px) {
+  .resto {
+    border: solid 2px violet;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    height: auto;
+    width: 100%;
+    /*max-width: 100vh;*/
+  }
+  .resto #resto_groupe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    height: auto;
+    width: 100%;
+    /*max-width: 100vh;*/
+    border: solid 2px blue;
+  }
+  .resto #resto_groupe img {
+    width: 358px;
+    height: 245px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
 /*
 Error: Inconsistent indentation: 1 space was used for indentation, but the rest of the document was indented using 2 spaces.
         on line 94 of ./style/style.css

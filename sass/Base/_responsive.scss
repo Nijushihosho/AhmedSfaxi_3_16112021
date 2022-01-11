@@ -23,8 +23,22 @@ img {
     .resto {
         border: solid 2px violet;
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: column wrap;
         height: auto;
-        max-width: 12rem;
+        width: 100%;
+        /*max-width: 100vh;*/
+        #resto_groupe {
+            display: flex;
+            flex-flow: row nowrap;
+            height: auto;
+            width: 100%;
+            /*max-width: 100vh;*/
+            border: solid 2px blue;
+                img {
+                    width: 358px;
+                    height: 245px;
+                    object-fit: cover;
+                }
+        }
         }
 }

@@ -80,15 +80,6 @@ P {
   margin: 10px;
 }
 
-footer {
-  padding: 0px 14px 15px 0px;
-  background-color: black;
-}
-
-footer a {
-  gap: 10px;
-}
-
 .fonctionnement li {
   -webkit-box-shadow: 5px 5px 10px -3px lightslategray;
           box-shadow: 5px 5px 10px -3px lightslategray;
@@ -108,22 +99,22 @@ main, .belleville, .fonctionnement li, .resto {
 }
 
 @-webkit-keyframes tournicoti {
-  0% {
+  from {
     -webkit-transform: rotate(-270deg);
             transform: rotate(-270deg);
   }
-  100% {
+  to {
     -webkit-transform: rotate(0);
             transform: rotate(0);
   }
 }
 
 @keyframes tournicoti {
-  0% {
+  from {
     -webkit-transform: rotate(-270deg);
             transform: rotate(-270deg);
   }
-  100% {
+  to {
     -webkit-transform: rotate(0);
             transform: rotate(0);
   }
@@ -481,17 +472,19 @@ main, .belleville, .fonctionnement li, .resto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  height: auto;
+  /*height: auto;*/
   margin-top: 50px;
 }
 
 .resto_vignette {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border-radius: 30px;
   background-color: white;
   -ms-flex-preferred-size: 100%;
@@ -517,35 +510,24 @@ main, .belleville, .fonctionnement li, .resto {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  /*min-height: 0; Fix Overflow iddues in css flex layouts*/
 }
 
-.vignette_image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+/*.vignette_image {
+max-width: 100%;
+height: auto;
+object-fit: cover;
 }
 
 .resto img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 12rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 30px 30px 0px 0px;
-  /*min-height: 0; Fix Overflow iddues in css flex layouts*/
-}
+		height: auto;
+		width: 100%;
+		object-fit: cover;
+		border-radius: 30px 30px 0px 0px;
+	}	
 
-/*vignette vertes nouveau */
+	/*vignette vertes nouveau */
 .nouveau {
   position: relative;
-  /*min-height: 0; Fix Overflow iddues in css flex layouts*/
 }
 
 .nouveau::before {
@@ -560,20 +542,20 @@ main, .belleville, .fonctionnement li, .resto {
   place-items: center;
   right: 1rem;
   top: 1rem;
-  /*min-height: 0; Fix Overflow iddues in css flex layouts*/
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
+/*img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}*/
 .titre_carte {
-  margin: 0px 25px 25px 25px;
   position: relative;
+  border: 2px solid palevioletred;
+  border-radius: 20px 20px 0px 0px;
+  margin-top: -14px;
   color: black;
+  background-color: #f2f2f2;
 }
 
 .titre_carte i {
@@ -860,6 +842,39 @@ footer a {
  transform: translate(-50px);
     }
 }*/
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*responvise vignettes desktop breakpoint 1440px*/
+/*.section.resto {
+    @media screen {
+        
+    }
+}*/
+/*.responsive {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}*/
+@media only screen and (min-width: 810px) {
+  .resto {
+    border: solid 2px violet;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    height: auto;
+    max-width: 12rem;
+  }
+}
+
 /*
 Error: Inconsistent indentation: 1 space was used for indentation, but the rest of the document was indented using 2 spaces.
         on line 94 of ./style/style.css

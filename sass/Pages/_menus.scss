@@ -1,17 +1,15 @@
-/*img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-}*/
+
 
 .titre_carte {
 position: relative;
-border: 2px solid palevioletred;
+/*border: 2px solid palevioletred;*/
 border-radius: 20px 20px 0px 0px;
-margin-top: -14px;
+margin-top: -34px;
+padding-top: 10px;
 	color: black;
     background-color: #f2f2f2;
 	 i {
+         padding-top: 10px;
 		font-size: 33px;
 		position: absolute;
 		right: 15px;
@@ -63,9 +61,9 @@ margin-top: -14px;
 display: flex;
 border: 1px solid gray;
 border-radius: 20px;
-margin: 10px;
+margin: 15px;
 background-color: white;
-height: auto;
+height: 80px;
 @extend %shadow;
 animation: apparition 3s;
 overflow: hidden;
@@ -81,7 +79,7 @@ cursor: pointer;
     &.menus_details {
         display: flex;
         justify-content: flex-start;
-        align-items: center;
+        align-content: center;
         border: 2px solid yellowgreen;
         overflow: hidden;
         height: auto;

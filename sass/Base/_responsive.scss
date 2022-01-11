@@ -19,26 +19,26 @@ img {
 }*/
 
 
-@media only screen and (min-width: 810px){
+@media only screen and (min-width: 1440px){
     .resto {
         border: solid 2px violet;
         display: flex;
         flex-flow: column wrap;
         height: auto;
         width: 100%;
-        /*max-width: 100vh;*/
+        max-width: 100%;
         #resto_groupe {
             display: flex;
             flex-flow: row nowrap;
             height: auto;
             width: 100%;
-            /*max-width: 100vh;*/
+            max-width: 100%;
             border: solid 2px blue;
                 img {
-                    width: 358px;
+                    width: 100%;
                     height: 245px;
                     object-fit: cover;
                 }
         }
-        }
+    }
 }

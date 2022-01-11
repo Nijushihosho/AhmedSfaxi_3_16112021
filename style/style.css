@@ -860,7 +860,7 @@ img {
     height: auto;
     max-width: 100%;
 }*/
-@media only screen and (min-width: 810px) {
+@media only screen and (min-width: 1440px) {
   .resto {
     border: solid 2px violet;
     display: -webkit-box;
@@ -872,7 +872,7 @@ img {
             flex-flow: column wrap;
     height: auto;
     width: 100%;
-    /*max-width: 100vh;*/
+    max-width: 100%;
   }
   .resto #resto_groupe {
     display: -webkit-box;
@@ -884,11 +884,11 @@ img {
             flex-flow: row nowrap;
     height: auto;
     width: 100%;
-    /*max-width: 100vh;*/
+    max-width: 100%;
     border: solid 2px blue;
   }
   .resto #resto_groupe img {
-    width: 358px;
+    width: 100%;
     height: 245px;
     -o-object-fit: cover;
        object-fit: cover;

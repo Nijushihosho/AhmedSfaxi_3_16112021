@@ -66,7 +66,7 @@ h3 {
 }
 
 h4 {
-  padding: 0;
+  padding-top: 10px;
   margin: 0px 0px 0px 10px;
 }
 
@@ -253,14 +253,17 @@ main, .belleville, .fonctionnement li, .resto {
   color: black;
 }
 
-.navbar h1 img {
+.nav h1 img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 15px 15px 0px 15px;
+  margin: 0 auto;
 }
 
 .container_loader {
@@ -553,7 +556,6 @@ main, .belleville, .fonctionnement li, .resto {
           transform: translateY(-50%);
 }
 
-<<<<<<< HEAD
 .resto img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -566,22 +568,6 @@ main, .belleville, .fonctionnement li, .resto {
 }
 
 /*vignette vertes nouveau */
-=======
-/*.vignette_image {
-max-width: 100%;
-height: auto;
-object-fit: cover;
-}
-
-.resto img {
-		height: auto;
-		width: 100%;
-		object-fit: cover;
-		border-radius: 30px 30px 0px 0px;
-	}	
-
-	/*vignette vertes nouveau */
->>>>>>> P3#02
 .nouveau {
   position: relative;
 }
@@ -729,15 +715,20 @@ object-fit: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 2px solid yellowgreen;
   overflow: hidden;
   height: auto;
   cursor: pointer;
+}
+
+.menus_conteneur_global.menus_details h4 {
+  padding: 10px;
   /*.menus_description {
             display: flex;
             justify-content: flex-start;
@@ -747,7 +738,7 @@ object-fit: cover;
             height: auto;*/
 }
 
-.menus_conteneur_global.menus_details .menus_check {
+.menus_conteneur_global.menus_details h4 .menus_check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -761,8 +752,8 @@ object-fit: cover;
   border-radius: 10px;
   background-color: #99e2d0;
   color: #99e2d0;
-  margin-right: -41px;
-  width: 40px;
+  margin-right: -51px;
+  width: 50px;
   -webkit-transition: margin-right 1s;
   transition: margin-right 1s;
 }
@@ -886,36 +877,13 @@ footer a {
   margin-right: 0;
 }
 
-<<<<<<< HEAD
 /* mediaqueries desktop*/
 @media only screen and (min-width: 1088px) {
-=======
-img {
-  width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-/*responvise vignettes desktop breakpoint 1440px*/
-/*.section.resto {
-    @media screen {
-        
-    }
-}*/
-/*.responsive {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-}*/
-@media only screen and (min-width: 810px) {
->>>>>>> P3#02
   .resto {
     border: solid 2px violet;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-<<<<<<< HEAD
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
@@ -931,14 +899,11 @@ img {
     -webkit-box-flex: 25%;
         -ms-flex: 25%;
             flex: 25%;
-=======
->>>>>>> P3#02
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
     height: auto;
-<<<<<<< HEAD
     width: 100%;
     border: solid 2px blue;
   }
@@ -950,6 +915,11 @@ img {
   }
 }
 
+/*img.responsive {
+    width: 305px;
+    height: auto;
+    object-fit: cover;
+}*/
 /* mediaqueries desktop*/
 @media only screen and (min-width: 1088px) {
   img.responsive {
@@ -978,27 +948,21 @@ img {
   }
 }
 
-@media only screen and (max-width: 810px) {
-  .vignette_image.nouveau {
-    width: 100%;
-    height: 50%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
+/*@media only screen and (max-width: 810px){
+    .vignette_image.nouveau {
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+    }
 }
 
-@media only screen and (max-width: 810px) {
-  a.vignette {
-    width: 100%;
-    height: 50%;
-    -o-object-fit: cover;
-       object-fit: cover;
-=======
-    max-width: 12rem;
->>>>>>> P3#02
-  }
-}
-
+@media only screen and (max-width: 810px){
+    a.vignette {
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+    }
+}*/
 /*
 Error: Inconsistent indentation: 1 space was used for indentation, but the rest of the document was indented using 2 spaces.
         on line 94 of ./style/style.css

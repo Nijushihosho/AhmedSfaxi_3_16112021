@@ -877,10 +877,17 @@ footer a {
   margin-right: 0;
 }
 
+.banner img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /* mediaqueries desktop*/
 @media only screen and (min-width: 1088px) {
   .resto {
-    border: solid 2px violet;
+    /*border: solid 2px violet;*/
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -890,24 +897,20 @@ footer a {
             flex-flow: column wrap;
     height: auto;
     width: 100%;
-    max-width: 100%;
   }
   .resto #resto_groupe {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-flex: 25%;
-        -ms-flex: 25%;
-            flex: 25%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
     height: auto;
     width: 100%;
-    border: solid 2px blue;
+    /*border: solid 2px blue;*/
   }
-  .resto #resto_groupe .resto.img {
+  .resto #resto_groupe .resto img {
     width: 100%;
     height: auto;
     -o-object-fit: cover;
@@ -923,10 +926,8 @@ footer a {
 /* mediaqueries desktop*/
 @media only screen and (min-width: 1088px) {
   img.responsive {
-    width: 50% content-box;
-    height: 50%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -948,19 +949,18 @@ footer a {
   }
 }
 
-/*@media only screen and (max-width: 810px){
+/*@media only screen and (max-width: 1440px){
     .vignette_image.nouveau {
         width: 100%;
         height: 50%;
-        object-fit: cover;
+        background-size: cover;
     }
-}
-
-@media only screen and (max-width: 810px){
+}*/
+/*@media only screen and (max-width: 1440px){
     a.vignette {
         width: 100%;
         height: 50%;
-        object-fit: cover;
+        background-size: cover;
     }
 }*/
 /*

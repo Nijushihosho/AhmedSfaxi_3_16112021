@@ -1,23 +1,25 @@
-
+.banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
 /* mediaqueries desktop*/
 
 @media only screen and (min-width: 1088px){
     .resto {
-        border: solid 2px violet;
+        /*border: solid 2px violet;*/
         display: flex;
         flex-flow: column wrap;
         height: auto;
         width: 100%;
-        max-width: 100%;
         #resto_groupe {
             display: flex;
-            flex: 25%;
             flex-flow: row nowrap;
             height: auto;
             width: 100%;
-            border: solid 2px blue;
-                .resto.img {
+            /*border: solid 2px blue;*/
+                .resto img {
                     width: 100%;
                     height: auto;
                     object-fit: cover;
@@ -36,11 +38,10 @@
 
 
 @media only screen and (min-width: 1088px){
-    img.responsive{
-        width: 50% content-box;
-        height: 50%;
-        object-fit: cover;
-}
+    img.responsive {
+        width: 100%;
+        height: auto;
+        }
 }
 
 
@@ -66,18 +67,18 @@
 }
 
 
-/*@media only screen and (max-width: 810px){
+/*@media only screen and (max-width: 1440px){
     .vignette_image.nouveau {
         width: 100%;
         height: 50%;
-        object-fit: cover;
+        background-size: cover;
     }
-}
+}*/
 
-@media only screen and (max-width: 810px){
+/*@media only screen and (max-width: 1440px){
     a.vignette {
         width: 100%;
         height: 50%;
-        object-fit: cover;
+        background-size: cover;
     }
 }*/

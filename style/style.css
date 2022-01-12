@@ -80,6 +80,39 @@ P {
   margin: 10px;
 }
 
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+}
+
+footer h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-family: "Shrikhand", cursive;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+footer i {
+  margin-right: 10px;
+}
+
+footer a {
+  margin-left: 0px;
+}
+
 .fonctionnement li {
   -webkit-box-shadow: 5px 5px 10px -3px lightslategray;
           box-shadow: 5px 5px 10px -3px lightslategray;
@@ -361,8 +394,6 @@ main, .belleville, .fonctionnement li, .resto {
 .fonctionnement ol {
   width: 100%;
   height: auto;
-  /*@media (max-width: 814px) {
-		}*/
 }
 
 .fonctionnement li {
@@ -522,6 +553,7 @@ main, .belleville, .fonctionnement li, .resto {
           transform: translateY(-50%);
 }
 
+<<<<<<< HEAD
 .resto img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -534,6 +566,22 @@ main, .belleville, .fonctionnement li, .resto {
 }
 
 /*vignette vertes nouveau */
+=======
+/*.vignette_image {
+max-width: 100%;
+height: auto;
+object-fit: cover;
+}
+
+.resto img {
+		height: auto;
+		width: 100%;
+		object-fit: cover;
+		border-radius: 30px 30px 0px 0px;
+	}	
+
+	/*vignette vertes nouveau */
+>>>>>>> P3#02
 .nouveau {
   position: relative;
 }
@@ -552,21 +600,18 @@ main, .belleville, .fonctionnement li, .resto {
   top: 1rem;
 }
 
-/*img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-}*/
 .titre_carte {
   position: relative;
-  border: 2px solid palevioletred;
+  /*border: 2px solid palevioletred;*/
   border-radius: 20px 20px 0px 0px;
-  margin-top: -14px;
+  margin-top: -34px;
+  padding-top: 10px;
   color: black;
   background-color: #f2f2f2;
 }
 
 .titre_carte i {
+  padding-top: 10px;
   font-size: 33px;
   position: absolute;
   right: 15px;
@@ -662,9 +707,9 @@ main, .belleville, .fonctionnement li, .resto {
   display: flex;
   border: 1px solid gray;
   border-radius: 20px;
-  margin: 10px;
+  margin: 15px;
   background-color: white;
-  height: auto;
+  height: 80px;
   -webkit-animation: apparition 3s;
           animation: apparition 3s;
   overflow: hidden;
@@ -687,9 +732,8 @@ main, .belleville, .fonctionnement li, .resto {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   border: 2px solid yellowgreen;
   overflow: hidden;
   height: auto;
@@ -842,13 +886,36 @@ footer a {
   margin-right: 0;
 }
 
+<<<<<<< HEAD
 /* mediaqueries desktop*/
 @media only screen and (min-width: 1088px) {
+=======
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*responvise vignettes desktop breakpoint 1440px*/
+/*.section.resto {
+    @media screen {
+        
+    }
+}*/
+/*.responsive {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}*/
+@media only screen and (min-width: 810px) {
+>>>>>>> P3#02
   .resto {
     border: solid 2px violet;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+<<<<<<< HEAD
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
@@ -864,11 +931,14 @@ footer a {
     -webkit-box-flex: 25%;
         -ms-flex: 25%;
             flex: 25%;
+=======
+>>>>>>> P3#02
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
     height: auto;
+<<<<<<< HEAD
     width: 100%;
     border: solid 2px blue;
   }
@@ -923,6 +993,9 @@ footer a {
     height: 50%;
     -o-object-fit: cover;
        object-fit: cover;
+=======
+    max-width: 12rem;
+>>>>>>> P3#02
   }
 }
 

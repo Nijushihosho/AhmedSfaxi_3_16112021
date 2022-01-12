@@ -691,7 +691,6 @@ main, .belleville, .fonctionnement li, .resto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid gray;
   border-radius: 20px;
   margin: 15px;
   background-color: white;

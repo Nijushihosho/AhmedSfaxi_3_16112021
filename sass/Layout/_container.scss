@@ -11,10 +11,9 @@
 	display: flex;
 	border-radius: 30px;
 	background-color: white;
-	/*flex-basis: 100%;*/
+	flex-basis: 100%;
 	margin: 25px;
 	height: auto;
-	width: 100%;
 		& .description {	
 		position: relative;
 		color: black;

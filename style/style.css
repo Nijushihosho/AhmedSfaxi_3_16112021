@@ -531,10 +531,10 @@ main, .belleville, .fonctionnement li, .resto {
   display: flex;
   border-radius: 30px;
   background-color: white;
-  /*flex-basis: 100%;*/
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   margin: 25px;
   height: auto;
-  width: 100%;
 }
 
 .resto_vignette .description {
@@ -935,16 +935,20 @@ footer a {
 
 
 /* mediaqueries tablette*/
-@media only screen and (min-width: 1088px) {
+@media only screen and (min-width: 375px) {
   a.vignette {
     width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
 /* mediaqueries smartphone*/
-@media only screen and (min-width: 1088px) {
+@media only screen and (min-width: 810px) {
   a.vignette {
     width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -952,6 +956,8 @@ footer a {
 @media only screen and (min-width: 1088px) {
   a.vignette {
     width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 

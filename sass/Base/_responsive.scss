@@ -49,17 +49,19 @@
 
 /* mediaqueries tablette*/
 
-@media only screen and (min-width: 1088px){
+@media only screen and (min-width: 375px){
     a.vignette {
         width: 100%;
+        object-fit: cover;
     }
 }
 
 /* mediaqueries smartphone*/
 
-@media only screen and (min-width: 1088px){
+@media only screen and (min-width: 810px){
     a.vignette {
         width: 100%;
+        object-fit: cover;
     }
 }
 
@@ -69,5 +71,6 @@
 @media only screen and (min-width: 1088px){
     a.vignette {
         width: 100%;
+        object-fit: cover;
     }
 }

@@ -921,7 +921,7 @@ footer a {
 }
 
 /* mediaqueries tablette*/
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 355px) {
   a.vignette {
     width: 100%;
     -o-object-fit: cover;

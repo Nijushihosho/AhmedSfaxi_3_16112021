@@ -11,9 +11,10 @@
 	display: flex;
 	border-radius: 30px;
 	background-color: white;
-	flex-basis: 100%;
+	/*flex-basis: 100%;*/
 	margin: 25px;
 	height: auto;
+	width: 100%;
 		& .description {	
 		position: relative;
 		color: black;
@@ -34,7 +35,7 @@
 
 .resto img {
 	display: flex;
-	height: auto;
+	height: 13rem;
 	width: 100%;
 	object-fit: cover;
 	border-radius: 30px 30px 0px 0px;

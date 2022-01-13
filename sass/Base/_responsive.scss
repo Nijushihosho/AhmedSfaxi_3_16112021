@@ -20,8 +20,9 @@
             width: 100%;
             /*border: solid 2px blue;*/
                 .resto img {
+                    display: flex;
                     width: 100%;
-                    height: auto;
+                    height: 13rem;
                     object-fit: cover;
                 }
         }
@@ -34,13 +35,13 @@
     object-fit: cover;
 }*/
 
-/* mediaqueries desktop*/
 
 
-@media only screen and (min-width: 1088px){
+
+/*@media only screen and (min-width: 1088px){
     img.responsive {
         width: 100%;
-        height: auto;
+        height: 13rem;
         }
 }
 
@@ -48,37 +49,25 @@
 
 /* mediaqueries tablette*/
 
-@media only screen and (max-width: 810px){
-    img.responsive{
+@media only screen and (min-width: 1088px){
+    a.vignette {
         width: 100%;
-        height: 100%;
-}
+    }
 }
 
 /* mediaqueries smartphone*/
 
-
-@media only screen and (max-width: 375px){
-    img.responsive {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-}
-}
-
-
-/*@media only screen and (max-width: 1440px){
-    .vignette_image.nouveau {
-        width: 100%;
-        height: 50%;
-        background-size: cover;
-    }
-}*/
-
-/*@media only screen and (max-width: 1440px){
+@media only screen and (min-width: 1088px){
     a.vignette {
         width: 100%;
-        height: 50%;
-        background-size: cover;
     }
-}*/
+}
+
+
+/* mediaqueries desktop*/
+
+@media only screen and (min-width: 1088px){
+    a.vignette {
+        width: 100%;
+    }
+}

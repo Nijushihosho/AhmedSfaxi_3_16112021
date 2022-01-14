@@ -84,14 +84,7 @@ cursor: pointer;
         height: auto;
         cursor: pointer;
         h4 {
-            padding: 10px;
-        /*.menus_description {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            border: 2px solid violet;
-            overflow: hidden;
-            height: auto;*/
+            padding: 10px; 
         .menus_check {
                 display: flex;
                 justify-content: center;
@@ -107,9 +100,9 @@ cursor: pointer;
         }
     }
 }
+
 span.menus_prix {
             display: flex;
-            /*border: 2px solid blue;*/
             align-items: flex-end;
             font-weight: bold;
             margin-left: auto;
@@ -166,7 +159,9 @@ main.menus_restos {
     }
 }
 
-
+.menus_details p {
+    margin-bottom: 0px;
+}
 
 
 

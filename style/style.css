@@ -76,7 +76,11 @@ a {
   margin: 5px;
 }
 
-P {
+.menus_details p {
+  margin-left: 10px;
+}
+
+footer P {
   margin: 10px;
 }
 
@@ -728,13 +732,6 @@ main, .belleville, .fonctionnement li, .resto {
 
 .menus_conteneur_global.menus_details h4 {
   padding: 10px;
-  /*.menus_description {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            border: 2px solid violet;
-            overflow: hidden;
-            height: auto;*/
 }
 
 .menus_conteneur_global.menus_details h4 .menus_check {
@@ -761,7 +758,6 @@ span.menus_prix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /*border: 2px solid blue;*/
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -835,6 +831,10 @@ main.menus_restos h3::after {
       -ms-flex-align: center;
           align-items: center;
   margin: 15px;
+}
+
+.menus_details p {
+  margin-bottom: 0px;
 }
 
 footer {

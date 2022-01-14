@@ -714,9 +714,9 @@ main, .belleville, .fonctionnement li, .resto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -769,6 +769,7 @@ span.menus_prix {
   margin-left: auto;
   color: black;
   margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 i.fas.fa-check {
@@ -799,6 +800,22 @@ i.fas.fa-check:active > .tournicoti {
 
 main.menus_restos {
   margin-top: -105px;
+}
+
+main.menus_restos h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+}
+
+main.menus_restos h3::after {
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  left: 0.1rem;
+  height: 0.25rem;
+  width: 2rem;
+  background-color: #99e2d0;
 }
 
 .bottom_page {

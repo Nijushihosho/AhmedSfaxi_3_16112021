@@ -77,7 +77,7 @@ cursor: pointer;
 }
     &.menus_details {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         border: 2px solid yellowgreen;
         overflow: hidden;
@@ -115,6 +115,7 @@ span.menus_prix {
             margin-left: auto;
             color: black;
             margin-right: 15px;
+            margin-bottom: 15px;
 }
 
 i.fas.fa-check {
@@ -139,6 +140,20 @@ i.fas.fa-check {
 
 main.menus_restos {
     margin-top: -105px;
+    h3 {
+        text-transform: uppercase;
+        font-weight: 400;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            top: 1.5rem;
+            left: 0.1rem;
+            height: 0.25rem;
+            width: 2rem;
+            background-color: $tertiary;
+        }
+    }
 }
 
 .bottom_page {

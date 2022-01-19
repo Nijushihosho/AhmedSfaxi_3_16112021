@@ -407,7 +407,7 @@ main, .belleville, .fonctionnement li, .resto {
   width: 100%;
   height: auto;
   text-align: center;
-  font-size: auto;
+  /*font-size: auto;*/
   border-radius: 25px;
   color: gray;
 }
@@ -462,7 +462,7 @@ main, .belleville, .fonctionnement li, .resto {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: auto;
+  /*font-size: auto;*/
 }
 
 .description .far {
@@ -779,8 +779,7 @@ i.fas.fa-check {
   margin: 0 auto;
   aspect-ratio: 1;
   border-radius: 50px;
-  -webkit-transform: all;
-          transform: all;
+  /*transform: all;*/
 }
 
 i.fas.fa-check:active > .tournicoti {
@@ -877,7 +876,6 @@ footer a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*border: 2px solid black;*/
   cursor: pointer;
   background-color: #99e2d0;
   color: #99e2d0;
@@ -886,7 +884,7 @@ footer a {
   -webkit-transition: margin-right 1s;
   transition: margin-right 1s;
   -webkit-transform: all 1s;
-          transform: all 1s;
+          /*transform: all 1s;*/
 }
 
 .menus_check:hover {

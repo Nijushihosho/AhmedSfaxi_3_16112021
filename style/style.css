@@ -777,7 +777,7 @@ i.fas.fa-check {
   background-color: white;
   width: 25px;
   margin: 0 auto;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   border-radius: 50px;
   /*transform: all;*/
 }
@@ -876,6 +876,7 @@ footer a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /*border: 2px solid black;*/
   cursor: pointer;
   background-color: #99e2d0;
   color: #99e2d0;
@@ -884,7 +885,7 @@ footer a {
   -webkit-transition: margin-right 1s;
   transition: margin-right 1s;
   -webkit-transform: all 1s;
-          /*transform: all 1s;*/
+          transform: all 1s;
 }
 
 .menus_check:hover {

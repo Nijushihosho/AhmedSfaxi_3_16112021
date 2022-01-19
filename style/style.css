@@ -724,7 +724,6 @@ main, .belleville, .fonctionnement li, .resto {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid yellowgreen;
   overflow: hidden;
   height: auto;
   cursor: pointer;
@@ -884,8 +883,6 @@ footer a {
   width: 60px;
   -webkit-transition: margin-right 1s;
   transition: margin-right 1s;
-  -webkit-transform: all 1s;
-          transform: all 1s;
 }
 
 .menus_check:hover {

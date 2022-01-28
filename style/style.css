@@ -1,28 +1,3 @@
-/*@mixin heart {
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    opacity: 0;
-    grid-area: 1/2;
-    transition: 0.3s ease-in-out;
-        &:hover.far {
-        background-clip: content-box;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        opacity: 1;
-        grid-area: 1/2;
-        transition: 0.3s ease-in-out;
-            &:hover.fas {
-            opacity: 1;
-            grid-area: 1/2;
-            background-clip: content-box;
-            -webkit-background-clip: text;
-            -webkit-animation-fill-color: transparent;
-            transition: 0.3s ease-in-out;
-            background-image: linear-gradient($secondary,$primary);
-            cursor: pointer;
-        }
-    }
-}*/
 /* No CSS */
 @import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&family=Shrikhand&display=swap);
 ::before,
@@ -279,7 +254,7 @@ main, .belleville, .fonctionnement li, .resto {
   height: 100vh;
   inset: 0;
   z-index: 1;
-  opacity: 0.3;
+  opacity: 1;
   -webkit-animation: disparition 3s;
           animation: disparition 3s;
   -webkit-animation-fill-mode: forwards;
@@ -617,10 +592,10 @@ main, .belleville, .fonctionnement li, .resto {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: 1/2;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
   position: absolute;
-  z-index: 1;
+  z-index: 100;
   /*background-clip: border-box;
     -webkit-background-clip: text;
     opacity: 1;
@@ -638,6 +613,7 @@ main, .belleville, .fonctionnement li, .resto {
 }
 
 .titre_carte .far:hover.far {
+  position: relative;
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -645,8 +621,8 @@ main, .belleville, .fonctionnement li, .resto {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: 1/2;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
   -webkit-transform: scale(1);
           transform: scale(1);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
@@ -655,6 +631,7 @@ main, .belleville, .fonctionnement li, .resto {
 }
 
 .titre_carte .fas {
+  position: absolute;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -670,7 +647,7 @@ main, .belleville, .fonctionnement li, .resto {
   transition-property: transform, -webkit-transform;
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
-  z-index: 5;
+  z-index: 500;
   /*background-clip: border-box;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -690,6 +667,7 @@ main, .belleville, .fonctionnement li, .resto {
 }
 
 .titre_carte .fas:hover.fas {
+  position: relative;
   opacity: 1;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
@@ -714,8 +692,7 @@ main, .belleville, .fonctionnement li, .resto {
   margin: 15px;
   background-color: white;
   height: 80px;
-  -webkit-animation: apparition 3s;
-          animation: apparition 3s;
+  /*animation: apparition 3s;*/
   overflow: hidden;
   cursor: pointer;
 }
@@ -768,6 +745,13 @@ main, .belleville, .fonctionnement li, .resto {
   transition: margin-right 1s;
 }
 
+.menus_rubriques {
+  -webkit-animation: apparition 3S;
+          animation: apparition 3S;
+  -webkit-transition-delay: 300ms;
+          transition-delay: 300ms;
+}
+
 span.menus_prix {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -793,7 +777,6 @@ i.fas.fa-check {
   margin: 0 auto;
   aspect-ratio: 1/1;
   border-radius: 50px;
-  /*transform: all;*/
 }
 
 i.fas.fa-check:active > .tournicoti {

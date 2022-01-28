@@ -1,3 +1,5 @@
+// bouton Explorez nos restaurants et bouton Commander//
+
 @mixin button-color {
 background-image:linear-gradient($secondary,$primary);
 box-shadow: 5px 5px 10px -3px darkgray;
@@ -17,55 +19,35 @@ transition: 0.2s ease-in-out;
     }
 }
 
-/*@mixin heart {
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    opacity: 0;
-    grid-area: 1/2;
-    transition: 0.3s ease-in-out;
-        &:hover.far {
-        background-clip: content-box;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        opacity: 1;
-        grid-area: 1/2;
-        transition: 0.3s ease-in-out;
-            &:hover.fas {
-            opacity: 1;
-            grid-area: 1/2;
-            background-clip: content-box;
-            -webkit-background-clip: text;
-            -webkit-animation-fill-color: transparent;
-            transition: 0.3s ease-in-out;
-            background-image: linear-gradient($secondary,$primary);
-            cursor: pointer;
-        }
-    }
-}*/
 
+// .far coeur vide du .titre_carte//
 
 @mixin heart-1{
 background-clip: border-box;
 -webkit-background-clip: text;
 opacity: 1;
 grid-area: 1/2;
-transition: 0.3s ease-in-out;
+transition: 1s ease-in-out;
 position: absolute;
-z-index:1;
+z-index:100;
     &:hover.far {
+    position: relative;
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 1;
     grid-area: 1/2;
-    transition: 0.3s ease-in-out;
+    transition: 1s ease-in-out;
     transform: scale(1);
     background-image: linear-gradient($secondary,$primary);
     cursor: pointer;
     }
 }
 
+//.fas coeur plein du .titre_carte//
+
 @mixin heart-2 {
+position: absolute;
 background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -74,8 +56,9 @@ grid-area: 1/2;
 transform-origin: bottom;
 transition-property: transform;
 transition: 1s ease-in-out;
-z-index: 5;
+z-index: 500;
     &:hover.fas {
+    position: relative;
     opacity: 1;
     grid-area: 1/2;
     background-clip: text;

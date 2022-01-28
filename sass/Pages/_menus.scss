@@ -64,7 +64,7 @@ margin: 15px;
 background-color: white;
 height: 80px;
 @extend %shadow;
-animation: apparition 3s;
+/*animation: apparition 3s;*/
 overflow: hidden;
 cursor: pointer;
     &:hover {
@@ -100,6 +100,11 @@ cursor: pointer;
     }
 }
 
+.menus_rubriques {
+    animation: apparition 3S;
+    transition-delay: 300ms;
+}
+
 span.menus_prix {
             display: flex;
             align-items: flex-end;
@@ -120,7 +125,6 @@ i.fas.fa-check {
     margin: 0 auto;
     aspect-ratio: 1/1;
     border-radius: 50px;
-    /*transform: all;*/
         &:active {
             & > .tournicoti {
         transition-property: transform;

@@ -141,6 +141,8 @@ main, .belleville, .fonctionnement li, .resto {
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+    -webkit-transition-delay: 300ms;
+            transition-delay: 300ms;
     opacity: 1;
   }
 }
@@ -154,6 +156,8 @@ main, .belleville, .fonctionnement li, .resto {
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+    -webkit-transition-delay: 300ms;
+            transition-delay: 300ms;
     opacity: 1;
   }
 }
@@ -748,8 +752,7 @@ main, .belleville, .fonctionnement li, .resto {
 .menus_rubriques {
   -webkit-animation: apparition 3S;
           animation: apparition 3S;
-  -webkit-transition-delay: 300ms;
-          transition-delay: 300ms;
+  /*transition-delay: 300ms;*/
 }
 
 span.menus_prix {

@@ -49,7 +49,8 @@ background-clip: border-box;
 -webkit-background-clip: text;
 opacity: 1;
 grid-area: 1/2;
-transition: 0.3s ease-in-out;
+transition: 0.3s ease-in-out;position: absolute;
+z-index:50;
     &:hover.far {
     background-clip: content-box;
     -webkit-background-clip: text;
@@ -57,24 +58,28 @@ transition: 0.3s ease-in-out;
     opacity: 1;
     grid-area: 1/2;
     transition: 0.3s ease-in-out;
+    transform: scale(-1);
     cursor: pointer;
     }
 }
 
 @mixin heart-2 {
-background-clip: border-box;
+background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 opacity: 1;
 grid-area: 1/2;
-transition: 0.3s ease-in-out;
+transform-origin: bottom;
+transition: 1s ease-in-out;
     &:hover.fas {
     opacity: 1;
     grid-area: 1/2;
-    background-clip: content-box;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-animation-fill-color: transparent;
-    transition: 0.3s ease-in-out;
+    transition: 1s ease-in-out;
+    transform: scale(2);
+    transition: transform 1s cubic-bezier(0.32, -0.01, 0.22, 0.82);
     background-image: linear-gradient($secondary,$primary);
     cursor: pointer;
     }

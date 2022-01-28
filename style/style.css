@@ -619,6 +619,8 @@ main, .belleville, .fonctionnement li, .resto {
   grid-area: 1/2;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  position: absolute;
+  z-index: 50;
   /*background-clip: border-box;
     -webkit-background-clip: text;
     opacity: 1;
@@ -645,19 +647,23 @@ main, .belleville, .fonctionnement li, .resto {
   grid-area: 1/2;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  -webkit-transform: scale(-1);
+          transform: scale(-1);
   cursor: pointer;
 }
 
 .titre_carte .fas {
-  background-clip: border-box;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 1;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: 1/2;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
   /*background-clip: border-box;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -681,11 +687,17 @@ main, .belleville, .fonctionnement li, .resto {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: 1/2;
-  background-clip: content-box;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-animation-fill-color: transparent;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.32, -0.01, 0.22, 0.82);
+  transition: -webkit-transform 1s cubic-bezier(0.32, -0.01, 0.22, 0.82);
+  transition: transform 1s cubic-bezier(0.32, -0.01, 0.22, 0.82);
+  transition: transform 1s cubic-bezier(0.32, -0.01, 0.22, 0.82), -webkit-transform 1s cubic-bezier(0.32, -0.01, 0.22, 0.82);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background-image: linear-gradient(#ff79da, #9356dc);
   cursor: pointer;

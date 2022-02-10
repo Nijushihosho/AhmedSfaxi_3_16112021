@@ -100,10 +100,22 @@ cursor: pointer;
     }
 }
 
-.menus_rubriques {
+.menus_rubriques1 {
     animation: apparition 3S;
-    /*transition-delay: 300ms;*/
+    transition-delay: 300ms;
 }
+
+.menus_rubriques2 {
+    animation: apparition 3S;
+    transition-delay: 300ms;
+}
+
+.menus_rubriques3 {
+    animation: apparition 3S;
+    transition-delay: 300ms;
+}
+
+
 
 span.menus_prix {
             display: flex;

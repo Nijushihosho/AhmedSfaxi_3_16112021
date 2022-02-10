@@ -627,12 +627,8 @@ main, .belleville, .fonctionnement li, .resto {
   /*transition: 0.3s ease-in-out;*/
   -webkit-transform-origin: 0% 50%;
           transform-origin: 0% 50%;
-  -webkit-transform: scaley(0);
-          transform: scaley(0);
-  -webkit-transition: -webkit-transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
-  transition: -webkit-transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
-  transition: transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
-  transition: transform 1000ms cubic-bezier(0.32, 0, 0.07, 1), -webkit-transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background-image: linear-gradient(#ff79da, #9356dc);
   cursor: pointer;
@@ -646,8 +642,8 @@ main, .belleville, .fonctionnement li, .resto {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: 1/2;
-  -webkit-transform: scalex(1);
-          transform: scalex(1);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
   /*background-clip: border-box;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -674,10 +670,10 @@ main, .belleville, .fonctionnement li, .resto {
   background-clip: content-box;
   -webkit-background-clip: text;
   -webkit-animation-fill-color: transparent;
-  -webkit-transform-origin: 0% 50%;
-          transform-origin: 0% 50%;
-  -webkit-transform: scaley(0);
-          transform: scaley(0);
+  -webkit-transform-origin: 50% top;
+          transform-origin: 50% top;
+  -webkit-transform: scaleX(-1.15);
+          transform: scaleX(-1.15);
   -webkit-transition: -webkit-transform 2000ms cubic-bezier(0.32, 0, 0.07, 1);
   transition: -webkit-transform 2000ms cubic-bezier(0.32, 0, 0.07, 1);
   transition: transform 2000ms cubic-bezier(0.32, 0, 0.07, 1);
@@ -748,10 +744,25 @@ main, .belleville, .fonctionnement li, .resto {
   transition: margin-right 1s;
 }
 
-.menus_rubriques {
+.menus_rubriques1 {
   -webkit-animation: apparition 3S;
           animation: apparition 3S;
-  /*transition-delay: 300ms;*/
+  -webkit-transition-delay: 300ms;
+          transition-delay: 300ms;
+}
+
+.menus_rubriques2 {
+  -webkit-animation: apparition 3S;
+          animation: apparition 3S;
+  -webkit-transition-delay: 300ms;
+          transition-delay: 300ms;
+}
+
+.menus_rubriques3 {
+  -webkit-animation: apparition 3S;
+          animation: apparition 3S;
+  -webkit-transition-delay: 300ms;
+          transition-delay: 300ms;
 }
 
 span.menus_prix {

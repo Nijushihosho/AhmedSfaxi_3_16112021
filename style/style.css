@@ -451,20 +451,20 @@ main, .belleville, .fonctionnement li, .resto {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: 1/2;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: opacity ease-in-out 1000ms;
+  transition: opacity ease-in-out 1000ms;
 }
 
 .description .far:hover.far {
   background-clip: content-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: 1;
+  opacity: 0;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: 1/2;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background-image: linear-gradient(#ff79da, #9356dc);
   cursor: pointer;
 }
 
@@ -472,15 +472,19 @@ main, .belleville, .fonctionnement li, .resto {
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: 1;
+  opacity: 0;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: 1/2;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: opacity 1500ms ease-in-out;
+  transition: opacity 1500ms ease-in-out;
+  -webkit-transition: scalex(1);
+  transition: scalex(1);
 }
 
 .description .fas:hover.fas {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background-image: linear-gradient(#ff79da, #9356dc);
   opacity: 1;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
@@ -488,10 +492,6 @@ main, .belleville, .fonctionnement li, .resto {
   background-clip: content-box;
   -webkit-background-clip: text;
   -webkit-animation-fill-color: transparent;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background-image: linear-gradient(#ff79da, #9356dc);
   cursor: pointer;
 }
 
@@ -745,24 +745,24 @@ main, .belleville, .fonctionnement li, .resto {
 }
 
 .menus_rubriques1 {
-  -webkit-animation: apparition 3S;
-          animation: apparition 3S;
-  -webkit-transition-delay: 300ms;
-          transition-delay: 300ms;
+  -webkit-animation: apparition 1S;
+          animation: apparition 1S;
+  -webkit-transition-delay: 1000ms;
+          transition-delay: 1000ms;
 }
 
 .menus_rubriques2 {
-  -webkit-animation: apparition 3S;
-          animation: apparition 3S;
-  -webkit-transition-delay: 300ms;
-          transition-delay: 300ms;
+  -webkit-animation: apparition 2S;
+          animation: apparition 2S;
+  -webkit-transition-delay: 2000ms;
+          transition-delay: 2000ms;
 }
 
 .menus_rubriques3 {
   -webkit-animation: apparition 3S;
           animation: apparition 3S;
-  -webkit-transition-delay: 300ms;
-          transition-delay: 300ms;
+  -webkit-transition-delay: 3000ms;
+          transition-delay: 3000ms;
 }
 
 span.menus_prix {

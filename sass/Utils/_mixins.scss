@@ -22,54 +22,53 @@ transition: 0.2s ease-in-out;
 
 // .far coeur vide du .titre_carte//
 
-@mixin heart-1{
+@mixin heart-1 {
 background-clip: border-box;
 -webkit-background-clip: text;
 opacity: 1;
 grid-area: 1/2;
-transition: 1s ease-in-out;
-position: absolute;
-z-index:100;
-    &:hover.far {
-    position: relative;
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: 1;
-    grid-area: 1/2;
-    transition: 1s ease-in-out;
-    transform: scale(1);
-    background-image: linear-gradient($secondary,$primary);
-    cursor: pointer;
-    }
+transition: 0.3s ease-in;
+transform: scalex(1);
+        &:hover.far {
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 1;
+        grid-area: 1/2;
+        /*transition: 0.3s ease-in-out;*/
+        transform-origin: 0% 50%;
+        transform: scaley(0);
+        transition: transform 1000ms cubic-bezier(.32,0,.07,1);
+        background-image: linear-gradient($secondary,$primary);
+        cursor: pointer;  
+        }
 }
 
 //.fas coeur plein du .titre_carte//
 
 @mixin heart-2 {
-position: absolute;
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-opacity: 1;
-grid-area: 1/2;
-transform-origin: bottom;
-transition-property: transform;
-transition: 1s ease-in-out;
-z-index: 500;
-    &:hover.fas {
-    position: relative;
-    opacity: 1;
-    grid-area: 1/2;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-animation-fill-color: transparent;
-    transition: 1s ease-in-out;
-    transform: scale(1);
-    background-image: linear-gradient($secondary,$primary);
-    cursor: pointer;
+        background-clip: content-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 1;
+        grid-area: 1/2;
+        transform: scalex(1);
+            &:hover.fas {
+            opacity: 1;
+            grid-area: 1/2;
+            background-clip: content-box;
+            -webkit-background-clip: text;
+            -webkit-animation-fill-color: transparent;
+            transform-origin: 0% 50%;
+            transform: scaley(0);
+            transition: transform 2000ms cubic-bezier(.32,0,.07,1);
+            background-image: linear-gradient($secondary,$primary);
+            cursor: pointer;
+            }
     }
-}
+
+
+
 
 
 

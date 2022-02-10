@@ -596,10 +596,10 @@ main, .belleville, .fonctionnement li, .resto {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: 1/2;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-  position: absolute;
-  z-index: 100;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  -webkit-transform: scalex(1);
+          transform: scalex(1);
   /*background-clip: border-box;
     -webkit-background-clip: text;
     opacity: 1;
@@ -617,7 +617,6 @@ main, .belleville, .fonctionnement li, .resto {
 }
 
 .titre_carte .far:hover.far {
-  position: relative;
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -625,33 +624,30 @@ main, .belleville, .fonctionnement li, .resto {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: 1/2;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  /*transition: 0.3s ease-in-out;*/
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  -webkit-transform: scaley(0);
+          transform: scaley(0);
+  -webkit-transition: -webkit-transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
+  transition: -webkit-transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
+  transition: transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
+  transition: transform 1000ms cubic-bezier(0.32, 0, 0.07, 1), -webkit-transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background-image: linear-gradient(#ff79da, #9356dc);
   cursor: pointer;
 }
 
 .titre_carte .fas {
-  position: absolute;
-  background-clip: text;
+  background-clip: content-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 1;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: 1/2;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-  z-index: 500;
+  -webkit-transform: scalex(1);
+          transform: scalex(1);
   /*background-clip: border-box;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -671,18 +667,21 @@ main, .belleville, .fonctionnement li, .resto {
 }
 
 .titre_carte .fas:hover.fas {
-  position: relative;
   opacity: 1;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: 1/2;
-  background-clip: text;
+  background-clip: content-box;
   -webkit-background-clip: text;
   -webkit-animation-fill-color: transparent;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  -webkit-transform: scaley(0);
+          transform: scaley(0);
+  -webkit-transition: -webkit-transform 2000ms cubic-bezier(0.32, 0, 0.07, 1);
+  transition: -webkit-transform 2000ms cubic-bezier(0.32, 0, 0.07, 1);
+  transition: transform 2000ms cubic-bezier(0.32, 0, 0.07, 1);
+  transition: transform 2000ms cubic-bezier(0.32, 0, 0.07, 1), -webkit-transform 2000ms cubic-bezier(0.32, 0, 0.07, 1);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background-image: linear-gradient(#ff79da, #9356dc);
   cursor: pointer;

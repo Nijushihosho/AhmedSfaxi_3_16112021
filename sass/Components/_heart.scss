@@ -29,7 +29,7 @@
         opacity: 0;
         grid-area: 1/2;
         transition: opacity 1500ms ease-in-out;
-        transition: scalex(1);
+        transition: scaleX(1);
             &:hover.fas {
             background-image: linear-gradient($secondary,$primary);
             opacity: 1;

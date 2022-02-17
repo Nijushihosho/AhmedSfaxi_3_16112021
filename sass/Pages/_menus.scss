@@ -79,7 +79,6 @@ cursor: pointer;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        overflow: hidden;
         height: auto;
         cursor: pointer;
         h4 {
@@ -175,9 +174,17 @@ main.menus_restos {
 }
 
 .menus_details p {
-    margin-bottom: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /*margin-bottom: 0px;*/
 }
 
+.menus_details {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 
 
 

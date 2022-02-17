@@ -8,7 +8,7 @@
     opacity: 1;
     grid-area: 1/2;
     transition: opacity ease-in-out 1000ms;
-        &:hover.far {
+        &:target.far {
         background-clip: content-box;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -29,8 +29,8 @@
         opacity: 0;
         grid-area: 1/2;
         transition: opacity 1500ms ease-in-out;
-        transition: scaleX(1);
-            &:hover.fas {
+        /*transition: scaleX(1);*/
+            &:target.fas {
             background-image: linear-gradient($secondary,$primary);
             opacity: 1;
             grid-area: 1/2;

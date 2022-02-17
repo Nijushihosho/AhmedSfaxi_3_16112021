@@ -455,7 +455,7 @@ main, .belleville, .fonctionnement li, .resto {
   transition: opacity ease-in-out 1000ms;
 }
 
-.description .far:hover.far {
+.description .far:target.far {
   background-clip: content-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -478,11 +478,10 @@ main, .belleville, .fonctionnement li, .resto {
   grid-area: 1/2;
   -webkit-transition: opacity 1500ms ease-in-out;
   transition: opacity 1500ms ease-in-out;
-  -webkit-transition: scalex(1);
-  transition: scalex(1);
+  /*transition: scaleX(1);*/
 }
 
-.description .fas:hover.fas {
+.description .fas:target.fas {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background-image: linear-gradient(#ff79da, #9356dc);
   opacity: 1;
@@ -706,7 +705,6 @@ main, .belleville, .fonctionnement li, .resto {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: hidden;
   height: auto;
   cursor: pointer;
 }
@@ -834,7 +832,16 @@ main.menus_restos h3::after {
 }
 
 .menus_details p {
-  margin-bottom: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /*margin-bottom: 0px;*/
+}
+
+.menus_details {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 footer {

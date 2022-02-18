@@ -8,11 +8,11 @@
     opacity: 1;
     grid-area: 1/2;
     transition: opacity ease-in-out 1000ms;
-        &:target.far {
+        &.far:active {
         background-clip: content-box;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        opacity: 0;
+        opacity: 1;
         grid-area: 1/2;
         background-image: linear-gradient($secondary,$primary);
         cursor: pointer;
@@ -28,9 +28,8 @@
         -webkit-text-fill-color: transparent;
         opacity: 0;
         grid-area: 1/2;
-        transition: opacity 1500ms ease-in-out;
-        /*transition: scaleX(1);*/
-            &:target.fas {
+        transition: opacity 2000ms ease-in-out;
+            &.fas:active {
             background-image: linear-gradient($secondary,$primary);
             opacity: 1;
             grid-area: 1/2;

@@ -64,7 +64,6 @@ margin: 15px;
 background-color: white;
 height: 80px;
 @extend %shadow;
-/*animation: apparition 3s;*/
 overflow: hidden;
 cursor: pointer;
     &:hover {
@@ -177,7 +176,6 @@ main.menus_restos {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    /*margin-bottom: 0px;*/
 }
 
 .menus_details {

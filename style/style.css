@@ -441,7 +441,6 @@ main, .belleville, .fonctionnement li, .resto {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*font-size: auto;*/
 }
 
 .description .far {
@@ -455,11 +454,11 @@ main, .belleville, .fonctionnement li, .resto {
   transition: opacity ease-in-out 1000ms;
 }
 
-.description .far:target.far {
+.description .far.far:active {
   background-clip: content-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: 0;
+  opacity: 1;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: 1/2;
@@ -476,12 +475,11 @@ main, .belleville, .fonctionnement li, .resto {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: 1/2;
-  -webkit-transition: opacity 1500ms ease-in-out;
-  transition: opacity 1500ms ease-in-out;
-  /*transition: scaleX(1);*/
+  -webkit-transition: opacity 2000ms ease-in-out;
+  transition: opacity 2000ms ease-in-out;
 }
 
-.description .fas:target.fas {
+.description .fas.fas:active {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background-image: linear-gradient(#ff79da, #9356dc);
   opacity: 1;
@@ -595,10 +593,8 @@ main, .belleville, .fonctionnement li, .resto {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: 1/2;
-  -webkit-transition: opacity ease-in-out 1000ms;
-  transition: opacity ease-in-out 1000ms;
-  -webkit-transform: scalex(1);
-          transform: scalex(1);
+  -webkit-transition: opacity ease-in-out 2000ms;
+  transition: opacity ease-in-out 2000ms;
   /*background-clip: border-box;
     -webkit-background-clip: text;
     opacity: 1;
@@ -615,7 +611,7 @@ main, .belleville, .fonctionnement li, .resto {
         }*/
 }
 
-.titre_carte .far:hover.far {
+.titre_carte .far.far:active {
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -638,10 +634,6 @@ main, .belleville, .fonctionnement li, .resto {
   grid-area: 1/2;
   -webkit-transition: opacity ease-in-out 2000ms;
   transition: opacity ease-in-out 2000ms;
-  -webkit-transform-origin: center center;
-          transform-origin: center center;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
   /*background-clip: border-box;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -660,7 +652,9 @@ main, .belleville, .fonctionnement li, .resto {
         }*/
 }
 
-.titre_carte .fas:hover.fas {
+.titre_carte .fas.fas:active {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background-image: linear-gradient(#ff79da, #9356dc);
   opacity: 1;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
@@ -668,8 +662,6 @@ main, .belleville, .fonctionnement li, .resto {
   background-clip: content-box;
   -webkit-background-clip: text;
   -webkit-animation-fill-color: transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background-image: linear-gradient(#ff79da, #9356dc);
   cursor: pointer;
 }
 
@@ -681,7 +673,6 @@ main, .belleville, .fonctionnement li, .resto {
   margin: 15px;
   background-color: white;
   height: 80px;
-  /*animation: apparition 3s;*/
   overflow: hidden;
   cursor: pointer;
 }
@@ -835,7 +826,6 @@ main.menus_restos h3::after {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  /*margin-bottom: 0px;*/
 }
 
 .menus_details {
